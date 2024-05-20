@@ -9,7 +9,7 @@ import {
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 
-import logo from "./../assets/logo.png"
+import logo from "./../assets/logo.png";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -46,8 +46,8 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == '/' ? "#B8901A" : "#000", 
-                  fontWeight: pathname == '/' ? "bold" : "",
+                  color: pathname == "/" ? "#B8901A" : "#000",
+                  fontWeight: pathname == "/" ? "bold" : "",
                 }}
               >
                 Home
@@ -57,8 +57,8 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == '/services' ? "#B8901A" : "#000", 
-                  fontWeight: pathname == '/services' ? "bold" : "",
+                  color: pathname == "/services" ? "#B8901A" : "#000",
+                  fontWeight: pathname == "/services" ? "bold" : "",
                 }}
               >
                 Services
@@ -68,8 +68,8 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == '/portfolio' ? "#B8901A" : "#000", 
-                  fontWeight: pathname == '/portfolio' ? "bold" : "",
+                  color: pathname == "/portfolio" ? "#B8901A" : "#000",
+                  fontWeight: pathname == "/portfolio" ? "bold" : "",
                 }}
               >
                 Portfolio
@@ -94,26 +94,30 @@ const Header = () => {
           </div>
           <div className="sign-in-sign-up d-flex justify-content-center">
             <Button
+              href="/signup"
               variant="outline-primary"
               className="btn btn-primary btn-block p-2 mx-2 rounded-0"
               style={{
                 fontFamily: "Poppins, sans-serif",
-                backgroundColor: "white",
+                background: pathname == "/signup" ? "#B8901A" : "#fff",
                 border: "1px solid #B8901A",
-                color: "black",
+                color: pathname == "/signup" ? "#fff" : "#000",
+                fontWeight: pathname == "/signup" ? "bold" : "",
               }}
             >
               Sign Up
             </Button>
             <Button
+              href="/login"
               variant="primary"
               className="btn btn-primary btn-block p-2 mx-2 rounded-0"
               style={{
                 fontFamily: "Poppins, sans-serif",
-                backgroundColor: "#B8901A",
-                border: "none",
-                color: "white",
+                background: pathname == "/login" ? "#B8901A" : "#fff",
+                border: "1px solid #B8901A",
                 width: "80px",
+                color: pathname == "/login" ? "#fff" : "#000",
+                fontWeight: pathname == "/login" ? "bold" : "",
               }}
             >
               Login
@@ -121,8 +125,6 @@ const Header = () => {
           </div>
         </div>
       </Navbar>
-
-      
     </>
   );
 };
