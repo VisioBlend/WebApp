@@ -3,11 +3,13 @@ import './services.css';
 import image1 from './../assets/image1.jpg'; 
 import image2 from './../assets/image2.jpg';
 import image3 from './../assets/image3.jpg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Services() {
+  const navigate = useNavigate();
   const handleNextButtonClick = () => {
     console.log('Next button clicked!');
+    navigate('/Services2');
   };
 
   return (
@@ -44,15 +46,16 @@ function Services() {
           <div className="box-services">
 
             <div className="detail">
-              <h3>Paket UMKM</h3>
+              <h3>Paket Inspire</h3>
               <div className="box-content">
                 <ul>
-                  <li>Desain Feed Marketing</li>
-                  <li>Desain Story Marketing</li>
+                <li>Desain Feed & Story Marketing</li>
+                <li>Desain Cetak (Banner,Spanduk, Dll)</li>
+                <li>Desain Logo</li>
                 </ul>
               </div>
               <div className='price'>
-                <span>Start from</span> <span className="yellow-text">Rp 16.000/ Item</span>
+                <span>Start from</span> <span className="yellow-text">Rp 47.000/ Item</span>
               </div>
             </div>
 
@@ -64,15 +67,16 @@ function Services() {
           <div className="box-services">
 
             <div className="detail">
-              <h3>Paket UMKM</h3>
+              <h3>Paket Vision</h3>
               <div className="box-content">
                 <ul>
-                  <li>Desain Feed Marketing</li>
-                  <li>Desain Story Marketing</li>
+                <li>Desain Feed , Story, & Cover Marketing</li>
+                <li>Desain Gambar / Ilustrasi 3D</li>
+                <li>Desain cetak  (Banner,Spanduk, Dll)</li>
                 </ul>
               </div>
               <div className='price'>
-                <span>Start from</span> <span className="yellow-text">Rp 16.000/ Item</span>
+                <span>Start from</span> <span className="yellow-text">Rp 99.000/ Item</span>
               </div>
             </div>
 
@@ -80,9 +84,7 @@ function Services() {
               <button className='button button-secondary'>See Product</button>
               <button className='button button-primary'>Book Now</button>
             </div>
-          </div>
-
-            
+          </div>  
         </div>
         <div className='review-and-ulasan'>
           <h2 className="review-title">Review & Ulasan</h2>
