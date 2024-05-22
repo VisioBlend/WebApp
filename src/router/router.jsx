@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         path: "/services",
         element: <Services />,
       },
-       {
+      {
         path: "/services2",
         element: <Services2 />,
       },

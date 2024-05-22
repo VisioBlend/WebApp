@@ -8,15 +8,6 @@ import asset1 from "./../assets/asset1.png";
 const SignupForm = () => {
   return (
     <>
-      {/* <style>
-        {`
-            @media (max-width: 992px) {
-              .d-cstm {
-                display: none;
-              }
-            }
-          `}
-      </style> */}
       <div
         className="signup-container"
         style={{ height: "100vh", width: "100vw" }}
