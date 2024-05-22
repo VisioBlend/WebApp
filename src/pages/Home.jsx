@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./home.css";
 import iconpartners from "./../assets/iconPartners.svg";
 import banner from "./../assets/banner.svg";
 import Picture1 from "./../assets/Picture1.png";
