@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./Home.css";
 import iconpartners from "./../assets/iconPartners.svg";
 import banner from "./../assets/banner.svg";
 import feed from "./../assets/feed.svg";
@@ -48,7 +48,7 @@ function Home() {
           </h1>
         </div>
       </div>
-      <div className="container m-0" style={{ padding: "0 100px" }}>
+      <div className="container" style={{ width: "100%", height: "100vh" }}>
         <div
           className="Heading-text"
           style={{ margin: "50px 0", fontFamily: "'Outfit', sans-serif" }}
@@ -75,7 +75,7 @@ function Home() {
         </div>
         <div
           className="box-home-container d-flex gap-5"
-          style={{ fontFamily: "Poppins, sans-serif" }}
+          style={{ fontFamily: "Poppins, sans-serif", marginLeft: "-20px" }}
         >
           {/* SERVICE 1 */}
           <div
