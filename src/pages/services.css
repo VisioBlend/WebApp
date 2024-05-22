@@ -1,26 +1,14 @@
-.title-and-boxes {
-  text-align: center;
-}
-
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-family: 'Monument Extended', sans-serif;
-}
-
-.description {
-  margin-bottom: 20px;
+.services-wrapper {
+  padding: 100px 120px;
 }
 
 .box-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
 
 .box-services {
   width: 30%;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,9 +19,9 @@
   padding: 20px;
   margin: 0 10px;
   height: 100%;
-  border: 2px solid #BF9B30;
-  border-radius: 10px;
-
+  background-color: white;
+  border: 2px solid #bf9b30;
+  border-radius: 50px;
 }
 
 .action {
@@ -41,7 +29,17 @@
 }
 
 .box-content {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: left;
+}
+
+.box-content ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .price {
@@ -49,7 +47,7 @@
 }
 
 .yellow-text {
-  color: #BF9B30;
+  color: #bf9b30;
   font-size: large;
 }
 
@@ -71,10 +69,10 @@
 .review {
   width: 30%;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0;
-  border: 2px solid #BF9B30;
-  box-shadow: 0 2px 6px #BF9B30;
+  border: 2px solid #bf9b30;
+  box-shadow: 0 2px 6px #948d7a;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -102,7 +100,7 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #BF9B30;
+  background-color: #bf9b30;
   margin: 10px 0;
 }
 
@@ -112,24 +110,24 @@
 }
 
 .oval-button {
-  width: 100px; 
-  height: 50px; 
-  margin: 10px; 
-  border-radius: 25px; 
-  background-color: #BF9B3f; 
-  color: white; 
-  font-size: 1.2rem; 
-  border: none; 
-  cursor: pointer; 
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: #bf9b3f;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
 }
 
 .oval-button:hover {
-  background-color: #846815; 
+  background-color: #846815;
 }
 
 .button-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .button-next-container {

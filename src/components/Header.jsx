@@ -1,15 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faSquareInstagram,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
-
-import logo from "./../assets/logo.png";
+import logoicon from "./../assets/logo.png";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -17,11 +9,6 @@ const Header = () => {
 
   return (
     <>
-      <style>
-        {`
-          //atur @media nya 
-        `}
-      </style>
       <Navbar
         bg="light"
         expand="lg"
@@ -32,7 +19,7 @@ const Header = () => {
           <div className="logo-brand">
             <Navbar.Brand href="/">
               <img
-                src={logo}
+                src={logoicon}
                 height="60"
                 className="d-inline-block align-top "
                 alt="Logo"
@@ -40,7 +27,7 @@ const Header = () => {
             </Navbar.Brand>
           </div>
           <div className="nav-links">
-            <Nav className="mr-auto ">
+            <Nav style={{ marginRight: "-50px" }}>
               <Nav.Link
                 href="/"
                 style={{
@@ -96,7 +83,7 @@ const Header = () => {
             <Button
               href="/signup"
               variant="outline-primary"
-              className="btn btn-primary btn-block p-2 mx-2 rounded-0"
+              className="btn btn-primary btn-block p-2 mx-2 rounded-3"
               style={{
                 fontFamily: "Poppins, sans-serif",
                 background: pathname == "/signup" ? "#B8901A" : "#fff",
@@ -110,7 +97,7 @@ const Header = () => {
             <Button
               href="/login"
               variant="primary"
-              className="btn btn-primary btn-block p-2 mx-2 rounded-0"
+              className="btn btn-primary btn-block p-2 mx-2 rounded-3"
               style={{
                 fontFamily: "Poppins, sans-serif",
                 background: pathname == "/login" ? "#B8901A" : "#fff",
