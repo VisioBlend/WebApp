@@ -1,0 +1,155 @@
+.services-wrapper {
+  padding: 100px 120px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-services {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail {
+  width: 100%;
+  padding: 20px;
+  margin: 0 10px;
+  height: 100%;
+  background-color: white;
+  border: 2px solid #bf9b30;
+  border-radius: 50px;
+}
+
+.action {
+  margin-top: 20px;
+}
+
+.box-content {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.box-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: #bf9b30;
+  font-size: large;
+}
+
+.review-and-ulasan {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.review-title {
+  margin-bottom: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.review {
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0;
+  border: 2px solid #bf9b30;
+  box-shadow: 0 2px 6px #948d7a;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.reviewer-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 24px;
+  padding: 0 20px 20px 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #bf9b30;
+  margin: 10px 0;
+}
+
+.ulasan {
+  padding: 20px;
+  text-align: left;
+}
+
+.oval-button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: #bf9b3f;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.oval-button:hover {
+  background-color: #846815;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-next-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+.button-primary {
+  background: #846815;
+}
+
+.button-secondary {
+  border: 1px solid #846815;
+  color: black;
+  margin-right: 20px;
+}
