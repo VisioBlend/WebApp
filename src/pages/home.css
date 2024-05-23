@@ -21,6 +21,14 @@
   color: #b8901a;
 }
 
+.box-home {
+  cursor: pointer;
+}
 .box-home:hover {
   transform: translateY(-5px);
+}
+
+.box-home-link {
+  text-decoration: none;
+  color: black;
 }

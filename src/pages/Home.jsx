@@ -78,472 +78,479 @@ function Home() {
           style={{ fontFamily: "Poppins, sans-serif", marginLeft: "-20px" }}
         >
           {/* SERVICE 1 */}
-          <div
-            className="box-home"
-            style={{
-              width: "300px",
-              height: "380px",
-              textAlign: "center",
-              backgroundColor: "white",
-              borderRadius: "20px",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-              display: "flex",
-              flexDirection: "column",
-              position: "relative",
-              transition: "transform 0.3s cubic-bezier(0.15, 0.75, 0.5, 1.25)",
-            }}
-          >
+          <a href="#" className="box-home-link">
             <div
+              className="box-home"
               style={{
-                position: "absolute",
-                top: "30px",
-                left: "30px",
-                padding: "5px",
-                backgroundColor: "#B8901A",
-                borderRadius: "5px",
-                color: "white",
-                width: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p style={{ margin: 0 }}>Design Marketing</p>
-            </div>
-
-            <img
-              src={feed}
-              alt="Service 1"
-              style={{ alignItems: "center", padding: "20px" }}
-            />
-            <div
-              className="element-boxHome"
-              style={{
-                textAlign: "left",
-                padding: "0 20px",
+                width: "300px",
+                height: "380px",
+                textAlign: "center",
+                backgroundColor: "white",
+                borderRadius: "20px",
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
+                position: "relative",
+                transition:
+                  "transform 0.3s cubic-bezier(0.15, 0.75, 0.5, 1.25)",
               }}
             >
-              <p className="fw-bold m-0">Design Feed, Story, Logo Dll</p>
               <div
-                className="wrap-rating d-flex align-items-center"
-                style={{ marginTop: "10px" }}
-              >
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon icon={faStar} style={{ color: "#B8901A" }} />
-                <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
-                  (15)
-                </p>
-              </div>
-              <hr
-                className="custom-vertical-line"
                 style={{
-                  borderLeft: "1px solid #ccc",
-                  width: "100%",
                   position: "absolute",
-                  top: "75%",
-                  left: "0",
+                  top: "30px",
+                  left: "30px",
+                  padding: "5px",
+                  backgroundColor: "#B8901A",
+                  borderRadius: "5px",
+                  color: "white",
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
+              >
+                <p style={{ margin: 0 }}>Design Marketing</p>
+              </div>
+
+              <img
+                src={feed}
+                alt="Service 1"
+                style={{ alignItems: "center", padding: "20px" }}
               />
               <div
-                className="wrap-price d-flex justify-content-between align-items-center"
+                className="element-boxHome"
                 style={{
-                  marginTop: "30px",
+                  textAlign: "left",
+                  padding: "0 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
                 }}
               >
-                <p style={{ margin: 0 }}>Start Rp. 16,000</p>
+                <p className="fw-bold m-0">Design Feed, Story, Logo Dll</p>
                 <div
-                  style={{
-                    backgroundColor: "#F9F1E7",
-                    padding: "10px",
-                    borderRadius: "50%",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                  className="wrap-rating d-flex align-items-center"
+                  style={{ marginTop: "10px" }}
                 >
                   <FontAwesomeIcon
-                    icon={faArrowRight}
-                    style={{
-                      color: "#B8901A",
-                      transform: "rotate(-45deg)",
-                    }}
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
                   />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon icon={faStar} style={{ color: "#B8901A" }} />
+                  <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
+                    (15)
+                  </p>
+                </div>
+                <hr
+                  className="custom-vertical-line"
+                  style={{
+                    borderLeft: "1px solid #ccc",
+                    width: "100%",
+                    position: "absolute",
+                    top: "75%",
+                    left: "0",
+                  }}
+                />
+                <div
+                  className="wrap-price d-flex justify-content-between align-items-center"
+                  style={{
+                    marginTop: "30px",
+                  }}
+                >
+                  <p style={{ margin: 0 }}>Start Rp. 16,000</p>
+                  <div
+                    style={{
+                      backgroundColor: "#F9F1E7",
+                      padding: "10px",
+                      borderRadius: "50%",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        color: "#B8901A",
+                        transform: "rotate(-45deg)",
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* SERVICE 2 */}
 
-          <div
-            className="box-home"
-            style={{
-              width: "300px",
-              height: "380px",
-              textAlign: "center",
-              backgroundColor: "white",
-              borderRadius: "20px",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-              display: "flex",
-              flexDirection: "column",
-              position: "relative",
-            }}
-          >
+          <a href="#" className="box-home-link">
             <div
+              className="box-home"
               style={{
-                position: "absolute",
-                top: "30px",
-                left: "30px",
-                padding: "5px",
-                backgroundColor: "#B8901A",
-                borderRadius: "5px",
-                color: "white",
-                width: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p style={{ margin: 0 }}>Design Architect</p>
-            </div>
-
-            <img
-              src={design}
-              alt="Service 1"
-              style={{
-                alignItems: "center",
-                padding: "20px",
-                borderRadius: "30px",
-              }}
-            />
-            <div
-              className="element-boxHome"
-              style={{
-                textAlign: "left",
-                padding: "0 20px",
+                width: "300px",
+                height: "380px",
+                textAlign: "center",
+                backgroundColor: "white",
+                borderRadius: "20px",
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
+                position: "relative",
               }}
             >
-              <p className="fw-bold m-0">Design 2D/3D Bangunan</p>
               <div
-                className="wrap-rating d-flex align-items-center"
-                style={{ marginTop: "10px" }}
-              >
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon icon={faStar} style={{ color: "#B8901A" }} />
-                <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
-                  (20)
-                </p>
-              </div>
-              <hr
-                className="custom-vertical-line"
                 style={{
-                  borderLeft: "1px solid #ccc",
-                  width: "100%",
                   position: "absolute",
-                  top: "75%",
-                  left: "0",
+                  top: "30px",
+                  left: "30px",
+                  padding: "5px",
+                  backgroundColor: "#B8901A",
+                  borderRadius: "5px",
+                  color: "white",
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ margin: 0 }}>Design Architect</p>
+              </div>
+
+              <img
+                src={design}
+                alt="Service 2"
+                style={{
+                  alignItems: "center",
+                  padding: "20px",
+                  borderRadius: "30px",
                 }}
               />
               <div
-                className="wrap-price d-flex justify-content-between align-items-center"
+                className="element-boxHome"
                 style={{
-                  marginTop: "30px",
+                  textAlign: "left",
+                  padding: "0 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
                 }}
               >
-                <p style={{ margin: 0 }}>Start Rp. 150,000</p>
+                <p className="fw-bold m-0">Design 2D/3D Bangunan</p>
                 <div
-                  style={{
-                    backgroundColor: "#F9F1E7",
-                    padding: "10px",
-                    borderRadius: "50%",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                  className="wrap-rating d-flex align-items-center"
+                  style={{ marginTop: "10px" }}
                 >
                   <FontAwesomeIcon
-                    icon={faArrowRight}
-                    style={{
-                      color: "#B8901A",
-                      transform: "rotate(-45deg)",
-                    }}
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
                   />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon icon={faStar} style={{ color: "#B8901A" }} />
+                  <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
+                    (20)
+                  </p>
+                </div>
+                <hr
+                  className="custom-vertical-line"
+                  style={{
+                    borderLeft: "1px solid #ccc",
+                    width: "100%",
+                    position: "absolute",
+                    top: "75%",
+                    left: "0",
+                  }}
+                />
+                <div
+                  className="wrap-price d-flex justify-content-between align-items-center"
+                  style={{
+                    marginTop: "30px",
+                  }}
+                >
+                  <p style={{ margin: 0 }}>Start Rp. 150,000</p>
+                  <div
+                    style={{
+                      backgroundColor: "#F9F1E7",
+                      padding: "10px",
+                      borderRadius: "50%",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        color: "#B8901A",
+                        transform: "rotate(-45deg)",
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* SERVICE 3 */}
-
-          <div
-            className="box-home"
-            style={{
-              width: "300px",
-              height: "380px",
-              textAlign: "center",
-              backgroundColor: "white",
-              borderRadius: "20px",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-              display: "flex",
-              flexDirection: "column",
-              position: "relative",
-            }}
-          >
+          <a href="#" className="box-home-link">
             <div
+              className="box-home"
               style={{
-                position: "absolute",
-                top: "30px",
-                left: "30px",
-                padding: "5px",
-                backgroundColor: "#B8901A",
-                borderRadius: "5px",
-                color: "white",
-                width: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p style={{ margin: 0 }}>Photography</p>
-            </div>
-
-            <img
-              src={ceremonial}
-              alt="Service 1"
-              style={{
-                alignItems: "center",
-                padding: "20px",
-                borderRadius: "30px",
-              }}
-            />
-            <div
-              className="element-boxHome"
-              style={{
-                textAlign: "left",
-                padding: "0 20px",
+                width: "300px",
+                height: "380px",
+                textAlign: "center",
+                backgroundColor: "white",
+                borderRadius: "20px",
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
+                position: "relative",
               }}
             >
-              <p className="fw-bold m-0">Ceremonial, Company, Gen Z</p>
               <div
-                className="wrap-rating d-flex align-items-center"
-                style={{ marginTop: "10px" }}
-              >
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon icon={faStar} style={{ color: "#E7E9EB" }} />
-                <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
-                  (102)
-                </p>
-              </div>
-              <hr
-                className="custom-vertical-line"
                 style={{
-                  borderLeft: "1px solid #ccc",
-                  width: "100%",
                   position: "absolute",
-                  top: "75%",
-                  left: "0",
+                  top: "30px",
+                  left: "30px",
+                  padding: "5px",
+                  backgroundColor: "#B8901A",
+                  borderRadius: "5px",
+                  color: "white",
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ margin: 0 }}>Photography</p>
+              </div>
+
+              <img
+                src={ceremonial}
+                alt="Service 3"
+                style={{
+                  alignItems: "center",
+                  padding: "20px",
+                  borderRadius: "30px",
                 }}
               />
               <div
-                className="wrap-price d-flex justify-content-between align-items-center"
+                className="element-boxHome"
                 style={{
-                  marginTop: "30px",
+                  textAlign: "left",
+                  padding: "0 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
                 }}
               >
-                <p style={{ margin: 0 }}>Start Rp. 250,000</p>
+                <p className="fw-bold m-0">Ceremonial, Company, Gen Z</p>
                 <div
-                  style={{
-                    backgroundColor: "#F9F1E7",
-                    padding: "10px",
-                    borderRadius: "50%",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                  className="wrap-rating d-flex align-items-center"
+                  style={{ marginTop: "10px" }}
                 >
                   <FontAwesomeIcon
-                    icon={faArrowRight}
-                    style={{
-                      color: "#B8901A",
-                      transform: "rotate(-45deg)",
-                    }}
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
                   />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon icon={faStar} style={{ color: "#E7E9EB" }} />
+                  <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
+                    (102)
+                  </p>
+                </div>
+                <hr
+                  className="custom-vertical-line"
+                  style={{
+                    borderLeft: "1px solid #ccc",
+                    width: "100%",
+                    position: "absolute",
+                    top: "75%",
+                    left: "0",
+                  }}
+                />
+                <div
+                  className="wrap-price d-flex justify-content-between align-items-center"
+                  style={{
+                    marginTop: "30px",
+                  }}
+                >
+                  <p style={{ margin: 0 }}>Start Rp. 250,000</p>
+                  <div
+                    style={{
+                      backgroundColor: "#F9F1E7",
+                      padding: "10px",
+                      borderRadius: "50%",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        color: "#B8901A",
+                        transform: "rotate(-45deg)",
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* SERVICE 4 */}
-
-          <div
-            className="box-home"
-            style={{
-              width: "300px",
-              height: "380px",
-              textAlign: "center",
-              backgroundColor: "white",
-              borderRadius: "20px",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-              display: "flex",
-              flexDirection: "column",
-              position: "relative",
-            }}
-          >
+          <a href="#" className="box-home-link">
             <div
+              className="box-home"
               style={{
-                position: "absolute",
-                top: "30px",
-                left: "30px",
-                padding: "5px",
-                backgroundColor: "#B8901A",
-                borderRadius: "5px",
-                color: "white",
-                width: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p style={{ margin: 0 }}>Videography</p>
-            </div>
-
-            <img
-              src={reels}
-              alt="Service 1"
-              style={{
-                alignItems: "center",
-                padding: "20px",
-                borderRadius: "30px",
-              }}
-            />
-            <div
-              className="element-boxHome"
-              style={{
-                textAlign: "left",
-                padding: "0 20px",
+                width: "300px",
+                height: "380px",
+                textAlign: "center",
+                backgroundColor: "white",
+                borderRadius: "20px",
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
+                position: "relative",
               }}
             >
-              <p className="fw-bold m-0">Reels, Event, Drone, Company ..</p>
               <div
-                className="wrap-rating d-flex align-items-center"
-                style={{ marginTop: "10px" }}
-              >
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon
-                  icon={faStar}
-                  style={{ color: "#B8901A", marginRight: "5px" }}
-                />
-                <FontAwesomeIcon icon={faStar} style={{ color: "#E7E9EB" }} />
-                <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
-                  (102)
-                </p>
-              </div>
-              <hr
-                className="custom-vertical-line"
                 style={{
-                  borderLeft: "1px solid #ccc",
-                  width: "100%",
                   position: "absolute",
-                  top: "75%",
-                  left: "0",
+                  top: "30px",
+                  left: "30px",
+                  padding: "5px",
+                  backgroundColor: "#B8901A",
+                  borderRadius: "5px",
+                  color: "white",
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ margin: 0 }}>Videography</p>
+              </div>
+
+              <img
+                src={reels}
+                alt="Service 4"
+                style={{
+                  alignItems: "center",
+                  padding: "20px",
+                  borderRadius: "30px",
                 }}
               />
               <div
-                className="wrap-price d-flex justify-content-between align-items-center"
+                className="element-boxHome"
                 style={{
-                  marginTop: "30px",
+                  textAlign: "left",
+                  padding: "0 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
                 }}
               >
-                <p style={{ margin: 0 }}>Start Rp. 325,000</p>
+                <p className="fw-bold m-0">Reels, Event, Drone, Company ..</p>
                 <div
-                  style={{
-                    backgroundColor: "#F9F1E7",
-                    padding: "10px",
-                    borderRadius: "50%",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                  className="wrap-rating d-flex align-items-center"
+                  style={{ marginTop: "10px" }}
                 >
                   <FontAwesomeIcon
-                    icon={faArrowRight}
-                    style={{
-                      color: "#B8901A",
-                      transform: "rotate(-45deg)",
-                    }}
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
                   />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ color: "#B8901A", marginRight: "5px" }}
+                  />
+                  <FontAwesomeIcon icon={faStar} style={{ color: "#E7E9EB" }} />
+                  <p style={{ margin: 0, marginLeft: "10px", color: "gray" }}>
+                    (102)
+                  </p>
+                </div>
+                <hr
+                  className="custom-vertical-line"
+                  style={{
+                    borderLeft: "1px solid #ccc",
+                    width: "100%",
+                    position: "absolute",
+                    top: "75%",
+                    left: "0",
+                  }}
+                />
+                <div
+                  className="wrap-price d-flex justify-content-between align-items-center"
+                  style={{
+                    marginTop: "30px",
+                  }}
+                >
+                  <p style={{ margin: 0 }}>Start Rp. 325,000</p>
+                  <div
+                    style={{
+                      backgroundColor: "#F9F1E7",
+                      padding: "10px",
+                      borderRadius: "50%",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        color: "#B8901A",
+                        transform: "rotate(-45deg)",
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div className="section"></div>
