@@ -1,54 +1,112 @@
-.services-wrapper {
-  padding: 100px 120px;
+.App {
+  min-height: 100vh;
+  padding: 150px 100px;
+  font-family: Poppins, sans-serif;
+}
+
+.title {
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .box-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .box-services {
   width: 30%;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .detail {
   width: 100%;
-  padding: 20px;
-  margin: 0 10px;
-  height: 100%;
+  height: 300px;
+  padding: 50px;
+  margin-bottom: 50px;
   background-color: white;
   border: 2px solid #bf9b30;
-  border-radius: 50px;
-}
-
-.action {
-  margin-top: 20px;
+  border-radius: 40px;
 }
 
 .box-content {
-  width: 100%;
+  margin: 20px 0 30px 0;
   min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: left;
 }
 
 .box-content ul {
-  list-style-type: none;
   padding-left: 0;
 }
 
 .price {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
 }
 
-.yellow-text {
+.price .yellow-text {
   color: #bf9b30;
-  font-size: large;
+  font-size: 20px;
+}
+
+.action {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #846815;
+  color: white;
+}
+
+.button-secondary {
+  border: 1px solid #846815;
+  color: #846815;
+  margin-right: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(191, 155, 48, 0.2),
+    rgba(191, 155, 48, 8),
+    rgba(191, 155, 48, 0.2)
+  );
+  margin-bottom: 5em;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-pp {
+  margin-right: 10px;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 10px;
 }
 
 .review-and-ulasan {
@@ -64,25 +122,33 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .review {
   width: 30%;
+  margin-bottom: 60px;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 0;
+  padding: 20px;
   border: 2px solid #bf9b30;
   box-shadow: 0 2px 6px #948d7a;
-  margin: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.review-uniq {
+  width: 30%;
+  margin-top: -10%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid #bf9b30;
+  box-shadow: 0 2px 6px #948d7a;
 }
 
 .review-header {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .reviewer-photo {
@@ -94,21 +160,34 @@
 
 .rating {
   font-size: 24px;
-  padding: 0 20px 20px 20px;
 }
 
 .divider {
   width: 100%;
   height: 1px;
   background-color: #bf9b30;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .ulasan {
-  padding: 20px;
   text-align: left;
 }
 
+.dot-icon {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -90px;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 .oval-button {
   width: 100px;
   height: 50px;
@@ -123,33 +202,4 @@
 
 .oval-button:hover {
   background-color: #846815;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-next-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.button {
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: none;
-  background: none;
-  font-size: 0.8rem;
-  color: white;
-  text-decoration: none;
-}
-.button-primary {
-  background: #846815;
-}
-
-.button-secondary {
-  border: 1px solid #846815;
-  color: black;
-  margin-right: 20px;
 }
