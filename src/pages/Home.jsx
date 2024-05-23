@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./home.css";
 import iconpartners from "./../assets/iconPartners.svg";
 import banner from "./../assets/banner.svg";
 import feed from "./../assets/feed.svg";
@@ -90,6 +90,7 @@ function Home() {
               display: "flex",
               flexDirection: "column",
               position: "relative",
+              transition: "transform 0.3s cubic-bezier(0.15, 0.75, 0.5, 1.25)",
             }}
           >
             <div

@@ -20,3 +20,7 @@
   font-size: 1rem;
   color: #b8901a;
 }
+
+.box-home:hover {
+  transform: translateY(-5px);
+}
