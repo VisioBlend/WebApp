@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import iconpartners from "./../assets/iconPartners.svg";
 import banner from "./../assets/banner.svg";
 import feed from "./../assets/feed.svg";
@@ -10,6 +11,7 @@ import Picture1 from "./../assets/Picture1.png";
 import Picture2 from "./../assets/Picture2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaPhone, FaComments, FaTasks, FaBox } from "react-icons/fa";
 
 function Home() {
   return (
@@ -48,7 +50,7 @@ function Home() {
           </h1>
         </div>
       </div>
-      <div className="container" style={{ width: "100%", height: "100vh" }}>
+      <div className="container" style={{ width: "100%" }}>
         <div
           className="Heading-text"
           style={{ margin: "50px 0", fontFamily: "'Outfit', sans-serif" }}
@@ -553,6 +555,43 @@ function Home() {
           </a>
         </div>
       </div>
+      {/* ALUR PEMESANAN */}
+      <div
+        className="custom-container"
+        style={{
+          fontFamily: "Poppins, sans-serif",
+          textAlign: "center",
+        }}
+      >
+        <div className="custom-header">
+          <div className="custom-title fs-3">
+            <p>Alur Pemesanan</p>
+          </div>
+          <div className="custom-step">
+            <div>
+              <FaPhone
+                className="custom-phoneIcon custom-icon"
+                style={{ transform: "scaleX(-1)" }}
+              />{" "}
+              1. Hubungi Kami
+            </div>
+            <div>
+              <FaComments className="custom-commentsIcon custom-icon" /> 2.
+              Diskusi Projek
+            </div>
+            <div>
+              <FaTasks className="custom-tasksIcon custom-icon" /> 3. Pengerjaan
+              Projek
+            </div>
+            <div>
+              <FaBox className="custom-boxIcon custom-icon" /> 4. Penyerahan
+              Projek
+            </div>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      {/* SECTION PEMISAH */}
       <div className="section"></div>
       <div
         className="wrap-content"
