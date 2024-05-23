@@ -551,7 +551,12 @@ function Home() {
         style={{ padding: "50px 100px", textAlign: "center" }}
       >
         <div className="logo-container">
-          <img src={iconpartners} alt="Logo" className="logo" />
+          <img
+            src={iconpartners}
+            alt="Logo"
+            className="logo"
+            style={{ height: "80px" }}
+          />
         </div>
         <div className="Judul">
           <h1
@@ -559,12 +564,19 @@ function Home() {
             style={{
               fontFamily: "'Outfit', sans-serif",
               fontSize: "50px",
+              margin: "20px 0",
             }}
           >
-            Partners & <span className="team-title">Team</span>
+            Partners &{" "}
+            <span className="team-title" style={{ color: "#B8901A" }}>
+              Team
+            </span>
           </h1>
         </div>
-        <h2 className="title2 fs-3">
+        <h2
+          className="title2 fs-3"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           Collaborative Excellence : Building Bridges, Driving Success
         </h2>
         <p style={{ marginTop: "2%", lineHeight: "25px" }}>
@@ -574,8 +586,14 @@ function Home() {
           yang mendorong inovasi <br />
           dan mendorong kesuksesan yang berkelanjutan bagi semua.
         </p>
-        <div className="boxes-wrapper">
-          <div className="boxes-container">
+        <div
+          className="boxes-wrapper d-flex"
+          style={{ flexDirection: "column", alignItems: "center" }}
+        >
+          <div
+            className="boxes-container d-flex"
+            style={{ justifyContent: "center", gap: "50px", margin: "15px 0" }}
+          >
             <div className="box">
               <img src={Picture1} alt="picture" style={{ width: "50%" }} />
             </div>
@@ -585,7 +603,10 @@ function Home() {
             <div className="box">Coming Soon</div>
             <div className="box">Coming Soon</div>
           </div>
-          <div className="boxes-container">
+          <div
+            className="boxes-container d-flex"
+            style={{ justifyContent: "center", gap: "50px", margin: "15px 0" }}
+          >
             <div className="box">Coming Soon</div>
             <div className="box">Coming Soon</div>
             <div className="box">Coming Soon</div>
