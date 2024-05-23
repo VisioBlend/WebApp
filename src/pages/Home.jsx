@@ -9,9 +9,15 @@ import ceremonial from "./../assets/ceremonial.svg";
 import reels from "./../assets/reels.svg";
 import Picture1 from "./../assets/Picture1.png";
 import Picture2 from "./../assets/Picture2.png";
+import about from "./../assets/iconAboutus.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FaPhone, FaComments, FaTasks, FaBox } from "react-icons/fa";
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -80,38 +86,9 @@ function Home() {
           style={{ fontFamily: "Poppins, sans-serif", marginLeft: "-20px" }}
         >
           {/* SERVICE 1 */}
-          <a href="#" className="box-home-link">
-            <div
-              className="box-home"
-              style={{
-                width: "300px",
-                height: "380px",
-                textAlign: "center",
-                backgroundColor: "white",
-                borderRadius: "20px",
-                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-                transition:
-                  "transform 0.3s cubic-bezier(0.15, 0.75, 0.5, 1.25)",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "30px",
-                  left: "30px",
-                  padding: "5px",
-                  backgroundColor: "#B8901A",
-                  borderRadius: "5px",
-                  color: "white",
-                  width: "50%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+          <a href="/" className="box-home-link">
+            <div className="box-home">
+              <div className="box-home-title">
                 <p style={{ margin: 0 }}>Design Marketing</p>
               </div>
 
@@ -162,7 +139,7 @@ function Home() {
                     borderLeft: "1px solid #ccc",
                     width: "100%",
                     position: "absolute",
-                    top: "75%",
+                    marginTop: "75px",
                     left: "0",
                   }}
                 />
@@ -172,7 +149,9 @@ function Home() {
                     marginTop: "30px",
                   }}
                 >
-                  <p style={{ margin: 0 }}>Start Rp. 16,000</p>
+                  <p style={{ margin: 0, fontWeight: "600" }}>
+                    Start Rp. 16,000
+                  </p>
                   <div
                     style={{
                       backgroundColor: "#F9F1E7",
@@ -198,39 +177,11 @@ function Home() {
 
           {/* SERVICE 2 */}
 
-          <a href="#" className="box-home-link">
-            <div
-              className="box-home"
-              style={{
-                width: "300px",
-                height: "380px",
-                textAlign: "center",
-                backgroundColor: "white",
-                borderRadius: "20px",
-                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "30px",
-                  left: "30px",
-                  padding: "5px",
-                  backgroundColor: "#B8901A",
-                  borderRadius: "5px",
-                  color: "white",
-                  width: "50%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+          <a href="/" className="box-home-link">
+            <div className="box-home">
+              <div className="box-home-title">
                 <p style={{ margin: 0 }}>Design Architect</p>
               </div>
-
               <img
                 src={design}
                 alt="Service 2"
@@ -282,7 +233,7 @@ function Home() {
                     borderLeft: "1px solid #ccc",
                     width: "100%",
                     position: "absolute",
-                    top: "75%",
+                    marginTop: "75px",
                     left: "0",
                   }}
                 />
@@ -292,7 +243,9 @@ function Home() {
                     marginTop: "30px",
                   }}
                 >
-                  <p style={{ margin: 0 }}>Start Rp. 150,000</p>
+                  <p style={{ margin: 0, fontWeight: "600" }}>
+                    Start Rp. 150,000
+                  </p>
                   <div
                     style={{
                       backgroundColor: "#F9F1E7",
@@ -317,36 +270,9 @@ function Home() {
           </a>
 
           {/* SERVICE 3 */}
-          <a href="#" className="box-home-link">
-            <div
-              className="box-home"
-              style={{
-                width: "300px",
-                height: "380px",
-                textAlign: "center",
-                backgroundColor: "white",
-                borderRadius: "20px",
-                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "30px",
-                  left: "30px",
-                  padding: "5px",
-                  backgroundColor: "#B8901A",
-                  borderRadius: "5px",
-                  color: "white",
-                  width: "50%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+          <a href="/" className="box-home-link">
+            <div className="box-home">
+              <div className="box-home-title">
                 <p style={{ margin: 0 }}>Photography</p>
               </div>
 
@@ -401,7 +327,7 @@ function Home() {
                     borderLeft: "1px solid #ccc",
                     width: "100%",
                     position: "absolute",
-                    top: "75%",
+                    marginTop: "75px",
                     left: "0",
                   }}
                 />
@@ -411,7 +337,9 @@ function Home() {
                     marginTop: "30px",
                   }}
                 >
-                  <p style={{ margin: 0 }}>Start Rp. 250,000</p>
+                  <p style={{ margin: 0, fontWeight: "600" }}>
+                    Start Rp. 250,000
+                  </p>
                   <div
                     style={{
                       backgroundColor: "#F9F1E7",
@@ -436,36 +364,9 @@ function Home() {
           </a>
 
           {/* SERVICE 4 */}
-          <a href="#" className="box-home-link">
-            <div
-              className="box-home"
-              style={{
-                width: "300px",
-                height: "380px",
-                textAlign: "center",
-                backgroundColor: "white",
-                borderRadius: "20px",
-                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "30px",
-                  left: "30px",
-                  padding: "5px",
-                  backgroundColor: "#B8901A",
-                  borderRadius: "5px",
-                  color: "white",
-                  width: "50%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+          <a href="/" className="box-home-link">
+            <div className="box-home">
+              <div className="box-home-title">
                 <p style={{ margin: 0 }}>Videography</p>
               </div>
 
@@ -520,7 +421,7 @@ function Home() {
                     borderLeft: "1px solid #ccc",
                     width: "100%",
                     position: "absolute",
-                    top: "75%",
+                    marginTop: "75px",
                     left: "0",
                   }}
                 />
@@ -530,7 +431,9 @@ function Home() {
                     marginTop: "30px",
                   }}
                 >
-                  <p style={{ margin: 0 }}>Start Rp. 325,000</p>
+                  <p style={{ margin: 0, fontWeight: "600" }}>
+                    Start Rp. 325,000
+                  </p>
                   <div
                     style={{
                       backgroundColor: "#F9F1E7",
@@ -557,10 +460,12 @@ function Home() {
       </div>
       {/* ALUR PEMESANAN */}
       <div
-        className="custom-container"
+        className="custom-container d-flex"
         style={{
           fontFamily: "Poppins, sans-serif",
-          textAlign: "center",
+          marginTop: "100px",
+          height: "180px",
+          width: "100%",
         }}
       >
         <div className="custom-header">
@@ -590,24 +495,92 @@ function Home() {
           </div>
         </div>
       </div>
-      <br></br>
+      {/* ABOUT US */}
+      <div
+        className="aboutSectionCustom"
+        style={{
+          height: "100vh",
+          padding: " 50px 100px",
+          fontFamily: "Poppins, sans-serif",
+          textAlign: "center",
+        }}
+      >
+        <div
+          className="aboutSectionCustom-wrapper"
+          style={{ justifyContent: "center" }}
+        >
+          <img
+            src={about}
+            alt="About"
+            className="aboutCustom"
+            style={{ height: "80px" }}
+          />
+          <h1
+            className="titleCustom fw-bold"
+            style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "50px",
+              margin: "20px 0",
+            }}
+          >
+            About <span style={{ color: "#B8901A" }}>Us</span>
+          </h1>
+          <p
+            className="descriptionCustom"
+            style={{ marginTop: "2%", lineHeight: "25px" }}
+          >
+            Kami memiliki keahlian di berbagai sektor dan skala proyek, yang
+            melibatkan desain, fotografi, dan videografi.
+            <br /> Pendekatan kami terhadap setiap proyek adalah sama,
+            memberikan perhatian dan perhatian yang konsisten.
+          </p>
+          <div className="servicesCustom" style={{ marginTop: "60px" }}>
+            <div className="serviceCardCustom">
+              <h3 className="serviceTitleCustom">Design</h3>
+              <p className="service-text">
+                Menciptakan solusi visual yang efektif dan menarik untuk
+                berbagai kebutuhan untuk memenuhi kebutuhan klien dari
+                perencanaan hingga implementasi
+              </p>
+            </div>
+            <div className="serviceCardCustom">
+              <h3 className="serviceTitleCustom">Photography</h3>
+              <p className="service-text">
+                Menangkap dan menampilkan detail yang rumit, elemen desain, dan
+                estetika keseluruhan struktur arsitektur.
+              </p>
+            </div>
+            <div className="serviceCardCustom">
+              <h3 className="serviceTitleCustom">Videography</h3>
+              <p className="service-text">
+                Membawa penceritaan visual ke tingkat yang lebih tinggi dengan
+                memasukkan elemen dinamis dan gerakan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* SECTION PEMISAH */}
       <div className="section"></div>
+      {/* PARTNERS & TEAMS */}
       <div
-        className="wrap-content"
-        style={{ padding: "50px 100px", textAlign: "center" }}
+        className="partner-container-content"
+        style={{
+          padding: "100px",
+          minHeight: "100vh",
+          textAlign: "center",
+          fontFamily: "Poppins, sans-serif",
+        }}
       >
-        <div className="logo-container">
+        <div className="partner-wrapper-content">
           <img
             src={iconpartners}
             alt="Logo"
-            className="logo"
+            className="partner-logo"
             style={{ height: "80px" }}
           />
-        </div>
-        <div className="Judul">
           <h1
-            className="title fw-bold"
+            className="partner-title fw-bold"
             style={{
               fontFamily: "'Outfit', sans-serif",
               fontSize: "50px",
@@ -615,49 +588,178 @@ function Home() {
             }}
           >
             Partners &{" "}
-            <span className="team-title" style={{ color: "#B8901A" }}>
+            <span className="partner-team-title" style={{ color: "#B8901A" }}>
               Team
             </span>
           </h1>
-        </div>
-        <h2
-          className="title2 fs-3"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Collaborative Excellence : Building Bridges, Driving Success
-        </h2>
-        <p style={{ marginTop: "2%", lineHeight: "25px" }}>
-          Memberdayakan kemitraan dan membina kerja sama tim untuk mencapai yang
-          tak tertandingi. <br />
-          Pendekatan kami yang berdedikasi dan visi bersama menciptakan sinergi
-          yang mendorong inovasi <br />
-          dan mendorong kesuksesan yang berkelanjutan bagi semua.
-        </p>
-        <div
-          className="boxes-wrapper d-flex"
-          style={{ flexDirection: "column", alignItems: "center" }}
-        >
+          <h2 className="partner-title2 fs-3">
+            Collaborative Excellence : Building Bridges, Driving Success
+          </h2>
+          <p style={{ marginTop: "2%", lineHeight: "25px" }}>
+            Memberdayakan kemitraan dan membina kerja sama tim untuk mencapai
+            yang tak tertandingi. <br />
+            Pendekatan kami yang berdedikasi dan visi bersama menciptakan
+            sinergi yang mendorong inovasi <br />
+            dan mendorong kesuksesan yang berkelanjutan bagi semua.
+          </p>
           <div
-            className="boxes-container d-flex"
-            style={{ justifyContent: "center", gap: "50px", margin: "15px 0" }}
+            className="partner-boxes-wrapper d-flex"
+            style={{ flexDirection: "column", alignItems: "center" }}
           >
-            <div className="box">
-              <img src={Picture1} alt="picture" style={{ width: "50%" }} />
+            <div
+              className="partner-boxes-container d-flex"
+              style={{
+                justifyContent: "center",
+                gap: "50px",
+                margin: "15px 0",
+              }}
+            >
+              <div className="partner-box">
+                <img src={Picture1} alt="picture" style={{ width: "50%" }} />
+              </div>
+              <div className="partner-box">
+                <img src={Picture2} alt="picture" style={{ width: "50%" }} />
+              </div>
+              <div className="partner-box">Coming Soon</div>
+              <div className="partner-box">Coming Soon</div>
             </div>
-            <div className="box">
-              <img src={Picture2} alt="picture" style={{ width: "50%" }} />
+            <div
+              className="partner-boxes-container d-flex"
+              style={{
+                justifyContent: "center",
+                gap: "50px",
+                margin: "15px 0",
+              }}
+            >
+              <div className="partner-box">Coming Soon</div>
+              <div className="partner-box">Coming Soon</div>
+              <div className="partner-box">Coming Soon</div>
+              <div className="partner-box">Coming Soon</div>
             </div>
-            <div className="box">Coming Soon</div>
-            <div className="box">Coming Soon</div>
           </div>
-          <div
-            className="boxes-container d-flex"
-            style={{ justifyContent: "center", gap: "50px", margin: "15px 0" }}
-          >
-            <div className="box">Coming Soon</div>
-            <div className="box">Coming Soon</div>
-            <div className="box">Coming Soon</div>
-            <div className="box">Coming Soon</div>
+        </div>
+      </div>
+      <div className="section"></div>
+      {/* PORTFOLIO */}
+      {/* ISI DENGAN CODE PORTFOLIO DESIGN */}
+      <br></br>
+      <br></br>
+      <div className="section"></div>
+      {/* CONTACT US */}
+      <div
+        className="custom-contact-container"
+        style={{ fontFamily: "Poppins, sans-serif", height: "100vh" }}
+      >
+        <div className="custom-contact-wrapper d-flex">
+          <div className="form-wrapper" style={{ marginRight: "200px" }}>
+            <form className="custom-contact-form" style={{ width: "400px" }}>
+              <div className="custom-mt-4 custom-mb-4">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  className="custom-form-control form-control"
+                  name="name"
+                  placeholder="Your name"
+                />
+              </div>
+              <div className="custom-mt-4 custom-mb-4">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  className="custom-form-control form-control"
+                  name="email"
+                  placeholder="Your email"
+                />
+              </div>
+              <div className="custom-mt-4 custom-mb-4">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  className="custom-form-control form-control"
+                  name="phone"
+                  placeholder="Your number"
+                />
+              </div>
+              <div className="custom-mt-4 custom-mb-5">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  className="custom-form-control form-control"
+                  name="message"
+                  placeholder="Write something..."
+                ></textarea>
+              </div>
+              <button type="submit" className="custom-submit-button">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div className="custom-contact-info">
+            <div className="contact-info-wrap">
+              <h2
+                style={{
+                  fontFamily: "'Outfit', sans-serif",
+                  fontWeight: "bold",
+                }}
+              >
+                Contact Us{" "}
+                <span
+                  className="custom-highlight"
+                  style={{
+                    color: "#bf9b30",
+                    fontFamily: "'Outfit', sans-serif",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Today
+                </span>
+              </h2>
+              <p style={{ marginTop: "20px" }}>
+                We will contact you and draw up requirements for the project and
+                estimate.
+              </p>
+
+              <div className="text-wrap-contactInfo">
+                <p className="text-contactInfo">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "#bf9b30" }}
+                  />{" "}
+                  <span style={{ fontWeight: "bold" }}>Email</span>
+                  <br />
+                  <span className="custom-highlight">
+                    visioblendbali@gmail.com
+                  </span>
+                </p>
+              </div>
+              <div className="text-wrap-contactInfo">
+                <p className="text-contactInfo">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ color: "#bf9b30" }}
+                  />{" "}
+                  <span style={{ fontWeight: "bold" }}>Phone</span>
+                  <br />
+                  <span className="custom-highlight">+62 857 3814 4820</span>
+                </p>
+              </div>
+              <div className="text-wrap-contactInfo">
+                <p className="text-contactInfo">
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    style={{ color: "#bf9b30" }}
+                  />{" "}
+                  <span style={{ fontWeight: "bold" }}>Address</span>
+                  <br />
+                  <span className="custom-highlight">
+                    Jl. Kapten Agung No.1, Denpasar
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
