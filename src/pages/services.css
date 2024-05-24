@@ -30,7 +30,7 @@
   padding: 50px;
   margin-bottom: 50px;
   background-color: white;
-  border: 2px solid #bf9b30;
+  border: 2px solid #b8901a;
   border-radius: 40px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .price .yellow-text {
-  color: #bf9b30;
+  color: #b8901a;
   font-size: 20px;
 }
 
@@ -61,37 +61,52 @@
   text-align: center;
 }
 
-.button {
+.custom-button {
+  display: inline-block;
   padding: 10px 20px;
-  border-radius: 30px;
-  border: none;
-  font-size: 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 25px;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.button-primary {
-  background: #846815;
+.see-product {
+  color: #b8901a;
+  border-color: #b8901a;
+  font-weight: 400;
+  margin-right: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.see-product:hover {
   color: white;
+  background-color: #b8901a;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
-.button-secondary {
-  border: 1px solid #846815;
-  color: #846815;
-  margin-right: 20px;
+.book-now {
+  background-color: #decc97;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-now:hover {
+  color: white;
+  background-color: #b8901a;
+  font-weight: bold;
 }
 
 .button-container hr {
-  flex-grow: 1; /* Membuat hr mengisi sisa ruang */
+  flex-grow: 1;
   height: 1px;
   border: 0;
   background-image: linear-gradient(
     to right,
-    rgba(191, 155, 48, 0.2),
+    rgba(191, 155, 48, 0.5),
     rgba(191, 155, 48, 8),
-    rgba(191, 155, 48, 0.2)
+    rgba(191, 155, 48, 0.5)
   );
-  margin: 0 1em; /* Jarak antara hr dengan tombol */
+  margin: 0 1em;
 }
 
 .user-profile {
@@ -132,7 +147,7 @@
   background-color: #ffffff;
   border-radius: 20px;
   padding: 20px;
-  border: 2px solid #bf9b30;
+  border: 2px solid #b8901a;
   box-shadow: 0 2px 6px #948d7a;
 }
 
@@ -142,7 +157,7 @@
   background-color: #ffffff;
   border-radius: 20px;
   padding: 20px;
-  border: 2px solid #bf9b30;
+  border: 2px solid #b8901a;
   box-shadow: 0 2px 6px #948d7a;
 }
 
@@ -166,7 +181,7 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #bf9b30;
+  background-color: #b8901a;
   margin: 20px 0;
 }
 
@@ -191,17 +206,18 @@
 }
 
 .oval-button {
-  width: 100px;
-  height: 50px;
+  padding: 15px 25px;
   margin: 10px;
-  border-radius: 25px;
-  background-color: #bf9b3f;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
+  border-radius: 30px;
+  border: 1px solid #b8901a;
+  color: #b8901a;
+  background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .oval-button:hover {
-  background-color: #846815;
+  background-color: #b8901a;
+  color: white;
+  font-weight: bold;
 }

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Services() {
   const navigate = useNavigate();
@@ -14,7 +15,6 @@ function Services() {
     console.log("Next button clicked!");
     navigate("/Services2");
   };
-
   const handleBackButtonClick = () => {
     console.log("Back button clicked!");
   };
@@ -48,10 +48,10 @@ function Services() {
               </div>
             </div>
             <div className="action">
-              <NavLink to="/portfolio" className="button button-secondary">
+              <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="button button-secondary">
+              <NavLink to="/" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>
@@ -73,12 +73,11 @@ function Services() {
                 <span className="yellow-text">Rp. 47,000/Item</span>
               </div>
             </div>
-
             <div className="action">
-              <NavLink to="/portfolio" className="button button-secondary">
+              <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="button button-secondary">
+              <NavLink to="/" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>
@@ -100,12 +99,11 @@ function Services() {
                 <span className="yellow-text">Rp. 99,000/ Item</span>
               </div>
             </div>
-
             <div className="action">
-              <NavLink to="/portfolio" className="button button-secondary">
+              <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="button button-secondary">
+              <NavLink to="/" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>
@@ -114,11 +112,11 @@ function Services() {
         {/* REVIEW / ULASAN*/}
         <div className="button-container">
           <button className="oval-button" onClick={handleBackButtonClick}>
-            Back
+            <FontAwesomeIcon icon={faArrowLeft} /> Back
           </button>
           <hr />
           <button className="oval-button" onClick={handleNextButtonClick}>
-            Next
+            Next <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
         <div className="review-and-ulasan">
