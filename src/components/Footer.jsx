@@ -318,6 +318,7 @@ const Footer = () => {
             textAlign: "center",
             color: "white",
             padding: "10px",
+            cursor: "default",
           }}
         >
           2024 © VisioBlend X Batavia Guardians | All Rights Reserved

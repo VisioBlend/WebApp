@@ -527,34 +527,34 @@ function Home() {
           </h1>
           <p
             className="descriptionCustom"
-            style={{ marginTop: "2%", lineHeight: "25px" }}
+            style={{ marginTop: "2%", lineHeight: "30px" }}
           >
-            Kami memiliki keahlian di berbagai sektor dan skala proyek, yang
-            melibatkan desain, fotografi, dan videografi.
-            <br /> Pendekatan kami terhadap setiap proyek adalah sama,
-            memberikan perhatian dan perhatian yang konsisten.
+            VisioBlend adalah platform digital yang bergerak di bidang desain,
+            fotografi, dan videografi profesional dengan <br />
+            klien di Provinsi Bali. Kami menawarkan solusi terpadu untuk semua
+            kebutuhan desain, fotografi, dan videografi <br />
+            dengan fokus pada fleksibilitas, kualitas, dan efisiensi.
           </p>
           <div className="servicesCustom" style={{ marginTop: "60px" }}>
             <div className="serviceCardCustom">
               <h3 className="serviceTitleCustom">Design</h3>
               <p className="service-text">
-                Menciptakan solusi visual yang efektif dan menarik untuk
-                berbagai kebutuhan untuk memenuhi kebutuhan klien dari
-                perencanaan hingga implementasi
+                Layanan desain marketing, termasuk desain Arsitektur, dengan
+                fokus pada kualitas dan keunikan.
               </p>
             </div>
             <div className="serviceCardCustom">
               <h3 className="serviceTitleCustom">Photography</h3>
               <p className="service-text">
-                Menangkap dan menampilkan detail yang rumit, elemen desain, dan
-                estetika keseluruhan struktur arsitektur.
+                Layanan fotografi kami mencakup fotografi komersial, produk, dan
+                event, menghasilkan foto yang memukau dan bercerita.
               </p>
             </div>
             <div className="serviceCardCustom">
               <h3 className="serviceTitleCustom">Videography</h3>
               <p className="service-text">
-                Membawa penceritaan visual ke tingkat yang lebih tinggi dengan
-                memasukkan elemen dinamis dan gerakan.
+                Layanan videografi kami mencakup video promosi, dokumentasi
+                event, dan konten media sosial, dengan hasil berkualitas.
               </p>
             </div>
           </div>
@@ -596,11 +596,11 @@ function Home() {
             Collaborative Excellence : Building Bridges, Driving Success
           </h2>
           <p style={{ marginTop: "2%", lineHeight: "25px" }}>
-            Memberdayakan kemitraan dan membina kerja sama tim untuk mencapai
-            yang tak tertandingi. <br />
-            Pendekatan kami yang berdedikasi dan visi bersama menciptakan
-            sinergi yang mendorong inovasi <br />
-            dan mendorong kesuksesan yang berkelanjutan bagi semua.
+            VisioBlend berkomitmen untuk bekerja sama dengan mitra dan tim
+            profesional terbaik di bidangnya. <br />
+            Kami membangun hubungan yang solid dengan berbagai ahli desain,
+            fotografi, dan videografi untuk memastikan <br />
+            setiap proyek mencapai standar kebutuhan masyarakat.
           </p>
           <div
             className="partner-boxes-wrapper d-flex"
@@ -641,7 +641,10 @@ function Home() {
       </div>
       <div className="section"></div>
       {/* PORTFOLIO */}
-      {/* ISI DENGAN CODE PORTFOLIO DESIGN */}
+      {/* ISI DENGAN CODE PORTFOLIO DESIGN DISINI */}
+      <p>design portfolio start dari sini</p>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <div className="section"></div>
@@ -699,7 +702,7 @@ function Home() {
           </div>
           <div className="custom-contact-info">
             <div className="contact-info-wrap">
-              <h2
+              <h1
                 style={{
                   fontFamily: "'Outfit', sans-serif",
                   fontWeight: "bold",
@@ -716,7 +719,7 @@ function Home() {
                 >
                   Today
                 </span>
-              </h2>
+              </h1>
               <p style={{ marginTop: "20px" }}>
                 We will contact you and draw up requirements for the project and
                 estimate.
@@ -726,7 +729,7 @@ function Home() {
                 <p className="text-contactInfo">
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    style={{ color: "#bf9b30" }}
+                    style={{ color: "#bf9b30", marginRight: "5px" }}
                   />{" "}
                   <span style={{ fontWeight: "bold" }}>Email</span>
                   <br />
@@ -739,7 +742,7 @@ function Home() {
                 <p className="text-contactInfo">
                   <FontAwesomeIcon
                     icon={faPhone}
-                    style={{ color: "#bf9b30" }}
+                    style={{ color: "#bf9b30", marginRight: "5px" }}
                   />{" "}
                   <span style={{ fontWeight: "bold" }}>Phone</span>
                   <br />
@@ -750,7 +753,7 @@ function Home() {
                 <p className="text-contactInfo">
                   <FontAwesomeIcon
                     icon={faMapMarkerAlt}
-                    style={{ color: "#bf9b30" }}
+                    style={{ color: "#bf9b30", marginRight: "5px" }}
                   />{" "}
                   <span style={{ fontWeight: "bold" }}>Address</span>
                   <br />

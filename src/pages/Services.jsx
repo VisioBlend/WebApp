@@ -112,7 +112,15 @@ function Services() {
           </div>
         </div>
         {/* REVIEW / ULASAN*/}
-        <hr />
+        <div className="button-container">
+          <button className="oval-button" onClick={handleBackButtonClick}>
+            Back
+          </button>
+          <hr />
+          <button className="oval-button" onClick={handleNextButtonClick}>
+            Next
+          </button>
+        </div>
         <div className="review-and-ulasan">
           <h2
             className="review-title"
@@ -306,18 +314,10 @@ function Services() {
           />
           <FontAwesomeIcon
             icon={faCircle}
-            style={{ color: "#888484", marginRight: "5px" }}
+            style={{ color: "#E3D3A3", marginRight: "5px" }}
           />
-          <FontAwesomeIcon icon={faCircle} style={{ color: "#E3D3A3" }} />
+          <FontAwesomeIcon icon={faCircle} style={{ color: "#888484" }} />
         </div>
-      </div>
-      <div className="button-container">
-        <button className="oval-button" onClick={handleBackButtonClick}>
-          Back
-        </button>
-        <button className="oval-button" onClick={handleNextButtonClick}>
-          Next
-        </button>
       </div>
     </div>
   );
