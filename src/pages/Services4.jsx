@@ -76,7 +76,7 @@ function Services4() {
                 </ul>
               </div>
               <div className="Service4Price">
-                <span>Price :</span>{" "}
+                <span>Total Price :</span>{" "}
                 <span className="Service4YellowText">Rp. 250,000-/+</span>
               </div>
             </div>
@@ -119,7 +119,7 @@ function Services4() {
                 </ul>
               </div>
               <div className="Service4Price">
-                <span>Price :</span>{" "}
+                <span>Total Price :</span>{" "}
                 <span className="Service4YellowText">Rp. 325,000-/+</span>
               </div>
             </div>
@@ -167,7 +167,7 @@ function Services4() {
                 </ul>
               </div>
               <div className="Service4Price">
-                <span>Price :</span>{" "}
+                <span>Total Price :</span>{" "}
                 <span className="Service4YellowText">Rp. 450,000-/+</span>
               </div>
             </div>
