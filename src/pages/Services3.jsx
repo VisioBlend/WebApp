@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./services345.css";
 import "./services.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,34 +9,34 @@ import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Services2() {
+function Services3() {
   const navigate = useNavigate();
 
   const handleNextButtonClick = () => {
     console.log("Next button clicked!");
-    navigate("/Services3");
+    navigate("/Services4");
   };
   const handleBackButtonClick = () => {
     console.log("Back button clicked!");
-    navigate("/Services");
+    navigate("/Services2");
   };
 
   return (
     <div className="App">
-      <div className="Service2TitleAndBoxes">
+      <div className="Service3TitleAndBoxes">
         <div className="wrap-btn-text">
           <button className="oval-button" onClick={handleBackButtonClick}>
             <FontAwesomeIcon icon={faArrowLeft} />
           </button>
           <div>
-            <h1 className="Service2Title text-center fw-bold">
-              Design Architecture
+            <h1 className="Service3Title text-center fw-bold">
+              Ceremonial Photography & Videography
             </h1>
             <h4
-              className="Service2Subtitle text-center"
+              className="Service3Subtitle text-center"
               style={{ color: "#B8901A" }}
             >
-              (2D/3D Building Design)
+              (Wedding Ceremony, Graduation, etc)
             </h4>
           </div>
           <button className="oval-button" onClick={handleNextButtonClick}>
@@ -43,105 +44,139 @@ function Services2() {
           </button>
         </div>
         <p
-          className="Service2TextService text-center"
+          className="Service3TextService text-center"
           style={{ marginTop: "20px", color: "gray" }}
         >
-          Mencakup proses perencanaan, perancangan, dan pembangunan berbagai
-          <br />
-          struktur fisik, termasuk bangunan.
+          Mengabadikan momen-momen istimewa dalam acara-acara seperti
+          pernikahan, <br />
+          upacara kelulusan, dan perayaan lainnya.
         </p>
-        <div className="Service2BoxContainer">
-          <div className="Service2BoxServices">
-            <div className="Service2Detail">
+        <div className="Service3BoxContainer">
+          <div className="Service3BoxServices">
+            <div className="Service3Detail">
               <h3
-                className="Service2ServiceTitle"
+                className="Service3ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Canvas
+                Paket Envision
               </h3>
-              <div className="Service2BoxContent">
+              <div className="Service3BoxContent">
                 <ul>
-                  <li>Desain Gambar IMB/ PBG</li>
-                  <li>Desain Gambar SLF ber SKA</li>
-                  <li>Desain Gambar Perencanaan</li>
+                  <li className="uniq-li">VIDEO :</li>
+                  <li>1 Kamera Video ( SONY ) + Lensa Kit</li>
+                  <li>Durasi Liputan +- 3 Jam/Hari</li>
+                  <li>Lama Finishing (Maks 2 minggu)</li>
+                  <li>1 Kameramen Video + 1 Asisten + 1 Editor</li>
+                </ul>
+                <ul>
+                  <li className="uniq-li">FOTO :</li>
+                  <li>Maks 35 File Foto</li>
+                  <li>1 Kameramen Foto + 1 Asisten + 1 Editor</li>
                 </ul>
               </div>
-              <div className="Service2Price">
-                <span>Start from :</span>{" "}
-                <span className="Service2YellowText">Rp. 16,000/M²</span>
+              <div className="Service3Price">
+                <span>Price :</span>{" "}
+                <span className="Service3YellowText">Rp. 250,000-/+</span>
               </div>
             </div>
-            <div className="Service2Action">
+            <div className="Service3Action">
               <NavLink
                 to="/portfolio"
-                className="Service2CustomButton Service2SeeProduct"
+                className="Service3CustomButton Service3SeeProduct"
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/" className="Service3CustomButton Service3BookNow">
                 Book Now
               </NavLink>
             </div>
           </div>
-          <div className="Service2BoxServices">
-            <div className="Service2Detail">
+          <div className="Service3BoxServices">
+            <div className="Service3Detail">
               <h3
-                className="Service2ServiceTitle"
+                className="Service3ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Inspire
+                Paket Illusion
               </h3>
-              <div className="Service2BoxContent">
+              <div className="Service3BoxContent">
                 <ul>
-                  <li>Laporan Struktur</li>
-                  <li>Laporan Sondir</li>
+                  <li className="uniq-li">VIDEO :</li>
+                  <li>1 Kamera Video (SONY) + Lensa Kit</li>
+                  <li>Durasi Liputan +- 7 Jam/Hari</li>
+                  <li>Lama Finishing (Maks 2 minggu)</li>
+                  <li>1 Kameramen Video + 1 Asisten + 1 Editor</li>
+                  <li>Lighting Termasuk (Pilihan terbatas)</li>
+                  <li>Drone (1x terbang)</li>
+                </ul>
+                <ul>
+                  <li className="uniq-li">FOTO :</li>
+                  <li>Maks 50 File Foto</li>
+                  <li>1 Kameramen Foto + 1 Asisten + 1 Editor</li>
+                  <li>Drone (1x Terbang)</li>
                 </ul>
               </div>
-              <div className="Service2Price">
-                <span>Start from :</span>{" "}
-                <span className="Service2YellowText">Rp. 47,000/M²</span>
+              <div className="Service3Price">
+                <span>Price :</span>{" "}
+                <span className="Service3YellowText">Rp. 355,000-/+</span>
               </div>
             </div>
-            <div className="Service2Action">
+            <div className="Service3Action">
               <NavLink
                 to="/portfolio"
-                className="Service2CustomButton Service2SeeProduct"
+                className="Service3CustomButton Service3SeeProduct"
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/" className="Service3CustomButton Service3BookNow">
                 Book Now
               </NavLink>
             </div>
           </div>
-          <div className="Service2BoxServices">
-            <div className="Service2Detail">
+          <div className="Service3BoxServices">
+            <div className="Service3Detail">
               <h3
-                className="Service2ServiceTitle"
+                className="Service3ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Vision
+                Paket Dreamscape
               </h3>
-              <div className="Service2BoxContent">
+              <div className="Service3BoxContent">
                 <ul>
-                  <li>Desain Gambar IMB/ PBG + Gambar 3D + Video Animasi</li>
-                  <li>Desain Gambar SLF ber SKA + Gambar 3D + Video Animasi</li>
-                  <li>Desain Gambar Perencanaan + Gambar 3D + Video Animasi</li>
+                  <li className="uniq-li">VIDEO :</li>
+                  <li>2 Kamera Video (SONY) + Lensa Kit</li>
+                  <li>Durasi Liputan +- 10 Jam/Hari</li>
+                  <li>Animasi 1 Bumper Video (Jika dibutuhkan)</li>
+                  <li>Lama Finishing (Maks 2 minggu)</li>
+                  <li>2 Kameramen Video + 1 Asisten + 1 Editor</li>
+                  <li>Lighting Termasuk (Pilihan terbatas)</li>
+                  <li>Drone (2x terbang)</li>
+                </ul>
+                <ul>
+                  <li className="uniq-li">FOTO :</li>
+                  <li>Unlimited Photo</li>
+                  <li>1 Kameramen Foto + 1 Asisten + 1 Editor</li>
+                  <li>Lighting Termasuk (Pilihan terbatas)</li>
+                  <li>Drone (2x terbang)</li>
+                </ul>
+                <ul>
+                  <li className="uniq-li">BONUS :</li>
+                  <li>100 GB Free Cloud Storage</li>
                 </ul>
               </div>
-              <div className="Service2Price">
-                <span>Start from :</span>{" "}
-                <span className="Service2YellowText">Rp. 75,000/M²</span>
+              <div className="Service3Price">
+                <span>Price :</span>{" "}
+                <span className="Service3YellowText">Rp. 550,000-/+</span>
               </div>
             </div>
-            <div className="Service2Action">
+            <div className="Service3Action">
               <NavLink
                 to="/portfolio"
-                className="Service2CustomButton Service2SeeProduct"
+                className="Service3CustomButton Service3SeeProduct"
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/" className="Service3CustomButton Service3BookNow">
                 Book Now
               </NavLink>
             </div>
@@ -149,9 +184,9 @@ function Services2() {
         </div>
         {/* REVIEW / ULASAN*/}
         <hr />
-        <div className="Service2ReviewAndUlasan">
+        <div className="Service3ReviewAndUlasan">
           <h2
-            className="Service2ReviewTitle"
+            className="Service3ReviewTitle"
             style={{
               fontWeight: "600",
               marginBottom: "200px",
@@ -160,13 +195,13 @@ function Services2() {
           >
             Review & Ulasan
           </h2>
-          <div className="Service2ReviewsContainer">
-            <div className="Service2Review">
-              <div className="Service2UserProfile">
-                <div className="Service2UserPp">
+          <div className="Service3ReviewsContainer">
+            <div className="Service3Review">
+              <div className="Service3UserProfile">
+                <div className="Service3UserPp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
-                    className="Service2ProfileIcon"
+                    className="Service3ProfileIcon"
                     style={{
                       fontSize: "40px",
                       color: "lightgray",
@@ -175,15 +210,15 @@ function Services2() {
                     }}
                   />
                 </div>
-                <div className="Service2NameUser">
-                  <h5>Aditya Pratama</h5>
+                <div className="Service3NameUser">
+                  <h5>Ahmad Abdullah</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
-                    @adityapratama92
+                    @ahmad_a
                   </span>
                 </div>
               </div>
               <div
-                className="Service2Rating fs-6 text-start"
+                className="Service3Rating fs-6 text-start"
                 style={{ margin: "10px 0 0 60px" }}
               >
                 <FontAwesomeIcon
@@ -207,23 +242,24 @@ function Services2() {
                   style={{ color: "#B8901A", marginRight: "5px" }}
                 />
               </div>
-              <div className="Service2Divider"></div>
-              <div className="Service2Ulasan">
+              <div className="Service3Divider"></div>
+              <div className="Service3Ulasan">
                 <p
-                  className="Service2TextUlasan"
+                  className="Service3TextUlasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
                 >
-                  Saya sangat puas dengan jasa arsitek yang saya dapatkan dari
-                  Visioblend. Arsiteknya sangat profesional dan komunikatif.
+                  Saya sampe kaget sendiri sama hasilnya! Layanan bener-bener
+                  oke. Hasil fotonya top banget lah! Tiap momen penting
+                  ke-capture dengan natural dan indah.
                 </p>
               </div>
             </div>
-            <div className="Service2ReviewUniq">
-              <div className="Service2UserProfile">
-                <div className="Service2UserPp">
+            <div className="Service3ReviewUniq">
+              <div className="Service3UserProfile">
+                <div className="Service3UserPp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
-                    className="Service2ProfileIcon"
+                    className="Service3ProfileIcon"
                     style={{
                       fontSize: "40px",
                       color: "lightgray",
@@ -232,15 +268,15 @@ function Services2() {
                     }}
                   />
                 </div>
-                <div className="Service2NameUser">
-                  <h5>Rizki Nugroho</h5>
+                <div className="Service3NameUser">
+                  <h5>Maria Garcia</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
-                    @rizkinugz
+                    @mariag
                   </span>
                 </div>
               </div>
               <div
-                className="Service2Rating fs-6 text-start"
+                className="Service3Rating fs-6 text-start"
                 style={{ margin: "10px 0 0 60px" }}
               >
                 <FontAwesomeIcon
@@ -264,24 +300,25 @@ function Services2() {
                   style={{ color: "#B8901A", marginRight: "5px" }}
                 />
               </div>
-              <div className="Service2Divider"></div>
-              <div className="Service2Ulasan">
+              <div className="Service3Divider"></div>
+              <div className="Service3Ulasan">
                 <p
-                  className="Service2TextUlasan"
+                  className="Service3TextUlasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
                 >
-                  Saya sangat puas dengan hasil video yang saya dapatkan dari
-                  Visioblend. Videografernya sangat profesional dan memiliki
-                  kreativitas tinggi.
+                  Saya dan teman - teman suka banget sama hasilnya. Fotonya
+                  bikin kita flashback ke saat-saat seru pas acara. Videonya
+                  juga keren banget, editingnya kreatif abis! Pokoknya, bikin
+                  kita terus pengen nonton lagi dan lagi.
                 </p>
               </div>
             </div>
-            <div className="Service2Review">
-              <div className="Service2UserProfile">
-                <div className="Service2UserPp">
+            <div className="Service3Review">
+              <div className="Service3UserProfile">
+                <div className="Service3UserPp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
-                    className="Service2ProfileIcon"
+                    className="Service3ProfileIcon"
                     style={{
                       fontSize: "40px",
                       color: "lightgray",
@@ -290,15 +327,15 @@ function Services2() {
                     }}
                   />
                 </div>
-                <div className="Service2NameUser">
-                  <h5>Arifin Hidayat</h5>
+                <div className="Service3NameUser">
+                  <h5>Fatimah Ibrahim</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
-                    @arifhidayat21
+                    @fatimahi
                   </span>
                 </div>
               </div>
               <div
-                className="Service2Rating fs-6 text-start"
+                className="Service3Rating fs-6 text-start"
                 style={{ margin: "10px 0 0 60px" }}
               >
                 <FontAwesomeIcon
@@ -322,14 +359,15 @@ function Services2() {
                   style={{ color: "#E7E9EB", marginRight: "5px" }}
                 />
               </div>
-              <div className="Service2Divider"></div>
-              <div className="Service2Ulasan">
+              <div className="Service3Divider"></div>
+              <div className="Service3Ulasan">
                 <p
-                  className="Service2TextUlasan"
+                  className="Service3TextUlasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
                 >
-                  Desain yang saya dapatkan selalu sesuai dengan keinginan saya.
-                  Selain itu, harga yang ditawarkan juga sangat terjangkau.
+                  Fotonya, videonya, semua serius bagus banget! Pas liat
+                  hasilnya, gue dan keluarga langsung senyum lebar. Gak nyangka
+                  bisa dapetin kenangan sebagus ini!
                 </p>
               </div>
             </div>
@@ -351,4 +389,4 @@ function Services2() {
   );
 }
 
-export default Services2;
+export default Services3;

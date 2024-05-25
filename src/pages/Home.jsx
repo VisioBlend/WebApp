@@ -21,6 +21,7 @@ import {
 
 function Home() {
   return (
+    // BAGIAN MOST NEEDED SERVICE
     <div className="container-home" style={{ cursor: "default" }}>
       {" "}
       <div
@@ -86,7 +87,7 @@ function Home() {
           style={{ fontFamily: "Poppins, sans-serif", marginLeft: "-20px" }}
         >
           {/* SERVICE 1 */}
-          <a href="/" className="box-home-link">
+          <a href="/Services" className="box-home-link">
             <div className="box-home">
               <div className="box-home-title">
                 <p style={{ margin: 0 }}>Design Marketing</p>
@@ -107,7 +108,7 @@ function Home() {
                   justifyContent: "space-between",
                 }}
               >
-                <p className="fw-bold m-0">Design Feed, Story, Logo Dll</p>
+                <p className="fw-bold m-0">Design Feed, Story, Logo, etc</p>
                 <div
                   className="wrap-rating d-flex align-items-center"
                   style={{ marginTop: "10px" }}
@@ -176,8 +177,7 @@ function Home() {
           </a>
 
           {/* SERVICE 2 */}
-
-          <a href="/" className="box-home-link">
+          <a href="/Services2" className="box-home-link">
             <div className="box-home">
               <div className="box-home-title">
                 <p style={{ margin: 0 }}>Design Architect</p>
@@ -201,7 +201,7 @@ function Home() {
                   justifyContent: "space-between",
                 }}
               >
-                <p className="fw-bold m-0">Design 2D/3D Bangunan</p>
+                <p className="fw-bold m-0">2D/3D Design</p>
                 <div
                   className="wrap-rating d-flex align-items-center"
                   style={{ marginTop: "10px" }}
@@ -270,7 +270,7 @@ function Home() {
           </a>
 
           {/* SERVICE 3 */}
-          <a href="/" className="box-home-link">
+          <a href="/Services3" className="box-home-link">
             <div className="box-home">
               <div className="box-home-title">
                 <p style={{ margin: 0 }}>Photography</p>
@@ -364,7 +364,7 @@ function Home() {
           </a>
 
           {/* SERVICE 4 */}
-          <a href="/" className="box-home-link">
+          <a href="/Services3" className="box-home-link">
             <div className="box-home">
               <div className="box-home-title">
                 <p style={{ margin: 0 }}>Videography</p>
@@ -389,7 +389,7 @@ function Home() {
                   justifyContent: "space-between",
                 }}
               >
-                <p className="fw-bold m-0">Reels, Event, Drone, Company ..</p>
+                <p className="fw-bold m-0">Company profile, content, etc</p>
                 <div
                   className="wrap-rating d-flex align-items-center"
                   style={{ marginTop: "10px" }}
@@ -458,7 +458,7 @@ function Home() {
           </a>
         </div>
       </div>
-      {/* ALUR PEMESANAN */}
+      {/* BAGIAN ALUR PEMESANAN */}
       <div
         className="custom-container d-flex"
         style={{
@@ -495,7 +495,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* ABOUT US */}
+      {/* BAGIAN ABOUT US */}
       <div
         className="aboutSectionCustom"
         style={{
@@ -540,7 +540,7 @@ function Home() {
               <h3 className="serviceTitleCustom">Design</h3>
               <p className="service-text">
                 Layanan desain marketing, termasuk desain Arsitektur, dengan
-                fokus pada kualitas dan keunikan.
+                fokus pada keunikan dan kualitas.
               </p>
             </div>
             <div className="serviceCardCustom">
@@ -562,7 +562,7 @@ function Home() {
       </div>
       {/* SECTION PEMISAH */}
       <div className="section"></div>
-      {/* PARTNERS & TEAMS */}
+      {/* BAGIAN PARTNERS & TEAMS */}
       <div
         className="partner-container-content"
         style={{
@@ -595,7 +595,7 @@ function Home() {
           <h2 className="partner-title2 fs-3">
             Collaborative Excellence : Building Bridges, Driving Success
           </h2>
-          <p style={{ marginTop: "2%", lineHeight: "25px" }}>
+          <p style={{ marginTop: "1%", lineHeight: "25px" }}>
             VisioBlend berkomitmen untuk bekerja sama dengan mitra dan tim
             profesional terbaik di bidangnya. <br />
             Kami membangun hubungan yang solid dengan berbagai ahli desain,
@@ -640,15 +640,15 @@ function Home() {
         </div>
       </div>
       <div className="section"></div>
-      {/* PORTFOLIO */}
-      {/* ISI DENGAN CODE PORTFOLIO DESIGN DISINI */}
-      <p>design portfolio start dari sini</p>
+      {/* BAGIAN PORTFOLIO */}
+      <p className="text-center">design portfolio start dari sini</p>
+      <p className="text-center">ClassName dibedakan</p>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <div className="section"></div>
-      {/* CONTACT US */}
+      {/*BAGIAN CONTACT US */}
       <div
         className="custom-contact-container"
         style={{ fontFamily: "Poppins, sans-serif", height: "100vh" }}

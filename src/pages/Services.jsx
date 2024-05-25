@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Services() {
   const navigate = useNavigate();
@@ -15,20 +15,31 @@ function Services() {
     console.log("Next button clicked!");
     navigate("/Services2");
   };
-  const handleBackButtonClick = () => {
-    console.log("Back button clicked!");
-  };
 
   return (
     <div className="App">
       <div className="title-and-boxes">
-        <h1 className="title text-center fw-bold">Design Marketing</h1>
-        <h4 className="text-center" style={{ color: "#B8901A" }}>
-          (Design Feed, Story, Logo, dan lainnya)
-        </h4>
-        <p className="text-service text-center" style={{ marginTop: "20px" }}>
+        <div className="div-wrapper">
+          <div
+            className="head1_4 text-center"
+            style={{ marginRight: "-100px" }}
+          >
+            <h1 className="title fw-bold">Design Marketing</h1>
+            <h4 style={{ color: "#B8901A" }}>
+              (Design Social Media Feed, Story, Logo, etc)
+            </h4>
+          </div>
+          <button className="oval-button" onClick={handleNextButtonClick}>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
+        </div>
+        <p
+          className="text-service text-center"
+          style={{ marginTop: "20px", color: "gray" }}
+        >
           Menciptakan solusi Marketing Design yang efektif dan menarik untuk
-          berbagai kebutuhan klien dari perencanaan hingga implementasi.
+          berbagai kebutuhan <br />
+          klien dari perencanaan hingga implementasi.
         </p>
         <div className="box-container">
           <div className="box-services">
@@ -43,7 +54,7 @@ function Services() {
                 </ul>
               </div>
               <div className="price">
-                <span>Start from</span>{" "}
+                <span>Start from :</span>{" "}
                 <span className="yellow-text">Rp. 16,000/Item</span>
               </div>
             </div>
@@ -69,7 +80,7 @@ function Services() {
                 </ul>
               </div>
               <div className="price">
-                <span>Start from</span>{" "}
+                <span>Start from :</span>{" "}
                 <span className="yellow-text">Rp. 47,000/Item</span>
               </div>
             </div>
@@ -95,8 +106,8 @@ function Services() {
                 </ul>
               </div>
               <div className="price">
-                <span>Start from</span>{" "}
-                <span className="yellow-text">Rp. 99,000/ Item</span>
+                <span>Start from :</span>{" "}
+                <span className="yellow-text">Rp. 99,000/Item</span>
               </div>
             </div>
             <div className="action">
@@ -110,26 +121,22 @@ function Services() {
           </div>
         </div>
         {/* REVIEW / ULASAN*/}
-        <div className="button-container">
-          <button className="oval-button" onClick={handleBackButtonClick}>
-            <FontAwesomeIcon icon={faArrowLeft} /> Back
-          </button>
-          <hr />
-          <button className="oval-button" onClick={handleNextButtonClick}>
-            Next <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        </div>
+        <hr />
         <div className="review-and-ulasan">
           <h2
             className="review-title"
-            style={{ fontWeight: "600", marginBottom: "200px" }}
+            style={{
+              fontWeight: "600",
+              marginBottom: "200px",
+              marginTop: "50px",
+            }}
           >
             Review & Ulasan
           </h2>
           <div className="reviews-container">
-            <div class="review">
-              <div class="user-profile">
-                <div class="user-pp">
+            <div className="review">
+              <div className="user-profile">
+                <div className="user-pp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
                     className="profile-icon"
@@ -141,7 +148,7 @@ function Services() {
                     }}
                   />
                 </div>
-                <div class="name-user">
+                <div className="name-user">
                   <h5>Malik Johnson</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
                     @johnsonmalik
@@ -173,8 +180,8 @@ function Services() {
                   style={{ color: "#B8901A", marginRight: "5px" }}
                 />
               </div>
-              <div class="divider"></div>
-              <div class="ulasan">
+              <div className="divider"></div>
+              <div className="ulasan">
                 <p
                   className="text-ulasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
@@ -186,9 +193,9 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div class="review-uniq">
-              <div class="user-profile">
-                <div class="user-pp">
+            <div className="review-uniq">
+              <div className="user-profile">
+                <div className="user-pp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
                     className="profile-icon"
@@ -200,7 +207,7 @@ function Services() {
                     }}
                   />
                 </div>
-                <div class="name-user">
+                <div className="name-user">
                   <h5>Mia Santos</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
                     @miaaa01
@@ -232,8 +239,8 @@ function Services() {
                   style={{ color: "#B8901A", marginRight: "5px" }}
                 />
               </div>
-              <div class="divider"></div>
-              <div class="ulasan">
+              <div className="divider"></div>
+              <div className="ulasan">
                 <p
                   className="text-ulasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
@@ -245,9 +252,9 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div class="review">
-              <div class="user-profile">
-                <div class="user-pp">
+            <div className="review">
+              <div className="user-profile">
+                <div className="user-pp">
                   <FontAwesomeIcon
                     icon={faUserCircle}
                     className="profile-icon"
@@ -259,7 +266,7 @@ function Services() {
                     }}
                   />
                 </div>
-                <div class="name-user">
+                <div className="name-user">
                   <h5>Lucas Nguyen</h5>
                   <span style={{ fontSize: "12px", color: "gray" }}>
                     @lucasnguyen
@@ -291,8 +298,8 @@ function Services() {
                   style={{ color: "#E7E9EB", marginRight: "5px" }}
                 />
               </div>
-              <div class="divider"></div>
-              <div class="ulasan">
+              <div className="divider"></div>
+              <div className="ulasan">
                 <p
                   className="text-ulasan"
                   style={{ fontSize: "14px", textAlign: "justify" }}
