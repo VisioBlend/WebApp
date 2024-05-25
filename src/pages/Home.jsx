@@ -295,7 +295,7 @@ function Home() {
                   justifyContent: "space-between",
                 }}
               >
-                <p className="fw-bold m-0">Ceremonial, Company, Gen Z</p>
+                <p className="fw-bold m-0">Ceremonial, Company, Gen-Z</p>
                 <div
                   className="wrap-rating d-flex align-items-center"
                   style={{ marginTop: "10px" }}
@@ -389,7 +389,7 @@ function Home() {
                   justifyContent: "space-between",
                 }}
               >
-                <p className="fw-bold m-0">Company profile, content, etc</p>
+                <p className="fw-bold m-0">Company Profile, Content, etc</p>
                 <div
                   className="wrap-rating d-flex align-items-center"
                   style={{ marginTop: "10px" }}
