@@ -40,12 +40,20 @@ const Header = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="/services"
+                href="/Services"
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == "/services" ? "#B8901A" : "#000",
-                  fontWeight: pathname == "/services" ? "bold" : "",
+                  color:
+                    pathname === "/Services" ||
+                    ("/Services2" && pathname !== "/")
+                      ? "#B8901A"
+                      : "#000",
+                  fontWeight:
+                    pathname === "/Services" ||
+                    ("/Services2" && pathname !== "/")
+                      ? "bold"
+                      : "",
                 }}
               >
                 Services
