@@ -56,7 +56,7 @@ function Services2() {
                 className="Service2ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Canvas
+                Produk Blueprint
               </h3>
               <div className="Service2BoxContent">
                 <ul>
@@ -88,7 +88,7 @@ function Services2() {
                 className="Service2ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Inspire
+                Produk Canvas
               </h3>
               <div className="Service2BoxContent">
                 <ul>
@@ -119,7 +119,7 @@ function Services2() {
                 className="Service2ServiceTitle"
                 style={{ fontWeight: "600" }}
               >
-                Produk Vision
+                Produk Arch
               </h3>
               <div className="Service2BoxContent">
                 <ul>
