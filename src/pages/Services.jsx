@@ -88,7 +88,7 @@ function Services() {
               <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="custom-button book-now">
+              <NavLink to="/ordering1" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>
@@ -114,7 +114,7 @@ function Services() {
               <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="custom-button book-now">
+              <NavLink to="/ordering1" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>

@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const { pathname } = useLocation();
+  const isServicesPage = /^\/Services([1-5]?)$/.test(pathname);
 
   return (
     <>
@@ -44,14 +45,14 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color:
-                    pathname === "/Services" ||
-                    ("/Services2" && pathname !== "/")
+                  color: isServicesPage
+                    // pathname === "/Services" ||
+                    // (pathname === "/Services" || pathname === "/Services5")
                       ? "#B8901A"
                       : "#000",
-                  fontWeight:
-                    pathname === "/Services" ||
-                    ("/Services2" && pathname !== "/")
+                  fontWeight: isServicesPage
+                    // pathname === "/Services" ||
+                    // (pathname === "/Services" || pathname === "/Services5")
                       ? "bold"
                       : "",
                 }}
@@ -80,8 +81,13 @@ const Header = () => {
                 Article
               </Nav.Link>
               <Nav.Link
-                href="#"
-                style={{ fontFamily: "Poppins, sans-serif", color: "black" }}
+                href="/Loyaltyreward"
+                style={{ 
+                  marginRight: "2rem",
+                  fontFamily: "Poppins, sans-serif",
+                  color: pathname == "/Loyaltyreward" ? "#B8901A" : "#000",
+                  fontWeight: pathname == "/Loyaltyreward" ? "bold" : "",
+                 }}
               >
                 Loyalty Rewards
               </Nav.Link>

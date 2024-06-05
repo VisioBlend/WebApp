@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import iconpartners from "./../assets/iconPartners.svg";
@@ -9,6 +9,16 @@ import ceremonial from "./../assets/ceremonial.svg";
 import reels from "./../assets/reels.svg";
 import Picture1 from "./../assets/Picture1.png";
 import Picture2 from "./../assets/Picture2.png";
+import iconPortfolio from "./../assets/iconPortfolio.svg";
+import image1 from "../assets/image/image1.jpg";
+import image2 from "../assets/image/image2.jpg";
+import image3 from "../assets/image/image3.jpg";
+import image4 from "../assets/image/image4.jpg";
+import image5 from "../assets/image/image5.jpg";
+import image6 from "../assets/image/image6.jpg";
+import image7 from "../assets/image/image7.jpg";
+import image8 from "../assets/image/image8.jpg";
+import image9 from "../assets/image/image9.jpg";
 import about from "./../assets/iconAboutus.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -20,6 +30,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
+  const [enlargedPhoto, setEnlargedPhoto] = useState(null);
+
+  const handlePhotoClick = (src) => {
+    setEnlargedPhoto(src);
+  };
+
+  const closeModal = () => {
+    setEnlargedPhoto(null);
+  };
+
   return (
     // BAGIAN MOST NEEDED SERVICE
     <div className="container-home" style={{ cursor: "default" }}>
@@ -641,12 +661,86 @@ function Home() {
       </div>
       <div className="section"></div>
       {/* BAGIAN PORTFOLIO */}
-      <p className="text-center">design portfolio start dari sini</p>
-      <p className="text-center">ClassName dibedakan</p>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div>
+        <div className="logo-container">
+          <img src={iconPortfolio} alt="Logo" className="logo" />
+        </div>
+        <div className="Judul">
+          <h1 className="title">Our <span style={{ color: "#B8901A" }}>Portofolio</span> </h1>
+        </div>
+        {/* <div class="servis-container">
+          <div class="servis-item">
+            <h2 class="servis-title">Design</h2>
+            <h2 class="servis-title">Photography</h2>
+            <h2 class="servis-title">Videography</h2>
+          </div>
+          <div class="servis-stats">
+            <div class="stat-item">
+              <span class="stat-number">10</span>
+              <span class="stat-text">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10K +</span>
+              <span class="stat-text">Satisfied Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">14K +</span>
+              <span class="stat-text">Completed Projects</span>
+            </div>
+          </div> */}
+        <div className="nvbar-container">
+          <div className="nvbar">
+            <div className="nvbar-right">
+              <span>Design Marketing & Architect</span>
+              <span>Commercial</span>
+              <span>Ceremonial</span>
+              <span>Gen-Z</span>
+            </div>
+          </div>
+        </div>
+        <div className="photo-grid">
+          <div className="photo-column">
+            <div className="photo">
+              <img src={image1} alt="Image 1" onClick={() => handlePhotoClick(image1)} />
+            </div>
+            <div className="photo">
+              <img src={image2} alt="Image 2" onClick={() => handlePhotoClick(image2)} />
+            </div>
+            <div className="photo">
+              <img src={image3} alt="Image 3" onClick={() => handlePhotoClick(image3)} />
+            </div>
+          </div>
+          <div className="photo-column">
+            <div className="photo">
+              <img src={image4} alt="Image 4" onClick={() => handlePhotoClick(image4)} />
+            </div>
+            <div className="photo">
+              <img src={image5} alt="Image 5" onClick={() => handlePhotoClick(image5)} />
+            </div>
+            <div className="photo">
+              <img src={image6} alt="Image 6" onClick={() => handlePhotoClick(image6)} />
+            </div>
+          </div>
+          <div className="photo-column">
+            <div className="photo">
+              <img src={image7} alt="Image 7" onClick={() => handlePhotoClick(image7)} />
+            </div>
+            <div className="photo">
+              <img src={image8} alt="Image 8" onClick={() => handlePhotoClick(image8)} />
+            </div>
+            <div className="photo">
+              <img src={image9} alt="Image 9" onClick={() => handlePhotoClick(image9)} />
+            </div>
+          </div>
+        </div>
+
+        {enlargedPhoto && (
+          <div className="photo-modal" onClick={closeModal}>
+            <span className="close-modal">&times;</span>
+            <img src={enlargedPhoto} alt="Enlarged" />
+          </div>
+        )}
+      </div>
       <div className="section"></div>
       {/*BAGIAN CONTACT US */}
       <div
@@ -767,6 +861,7 @@ function Home() {
         </div>
       </div>
     </div>
+
   );
 }
 
