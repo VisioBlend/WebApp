@@ -4,6 +4,9 @@ import Home from "../pages/Home.jsx";
 import Services from "../pages/Services.jsx";
 import Services2 from "../pages/Services2.jsx";
 import Portfolio from "../pages/portfolio.jsx";
+import Portfolio2 from "../pages/Portfolio2.jsx";
+import Portfolio3 from "../pages/Portfolio3.jsx";
+import Portfolio4 from "../pages/Portfolio4.jsx";
 import LoginForm from "../pages/login.jsx";
 import SignupForm from "../pages/signup.jsx";
 import Services3 from "../pages/Services3.jsx";
@@ -11,6 +14,7 @@ import Services4 from "../pages/Services4.jsx";
 import Services5 from "../pages/Services5.jsx";
 import Loyaltyreward from "../pages/LoyaltyReward.jsx";
 import Ordering1 from "../pages/ordering1.jsx";
+import Article from "../pages/Article.jsx";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +50,18 @@ const router = createBrowserRouter([
         element: <Portfolio />,
       },
       {
+        path: "/Portfolio2",
+        element: <Portfolio2 />,
+      },
+      {
+        path: "/Portfolio3",
+        element: <Portfolio3 />,
+      },
+      {
+        path: "/Portfolio4",
+        element: <Portfolio4 />,
+      },
+      {
         path: "/login",
         element: <LoginForm />,
       },
@@ -60,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "/ordering1",
         element: <Ordering1 />,
+      },
+      {
+        path: "/Article",
+        element: <Article />,
       },
     ],
   },
