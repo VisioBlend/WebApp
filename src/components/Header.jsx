@@ -71,11 +71,12 @@ const Header = () => {
                 Portfolio
               </Nav.Link>
               <Nav.Link
-                href="#"
+                href="/Article"
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: "black",
+                  color: pathname == "/Article" ? "#B8901A" : "#000",
+                  fontWeight: pathname == "/Article" ? "bold" : "",
                 }}
               >
                 Article

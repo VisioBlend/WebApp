@@ -66,10 +66,10 @@ function Home() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ margin: "0" }}>
+          <h1 style={{ color: "#FFF", margin: "0"}}>
             Realize Your Dream World & Capture Every Moment
           </h1>
-          <h1 style={{ margin: "0" }}>
+          <h1 style={{ color: "#FFF", margin: "0" }}>
             With <span style={{ color: "#B8901A" }}>V</span>
             isio
             <span style={{ color: "#B8901A" }}>B</span>
