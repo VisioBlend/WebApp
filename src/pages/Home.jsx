@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from 'react-router-dom';
 import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import iconpartners from "./../assets/iconPartners.svg";
@@ -668,11 +669,11 @@ function Home() {
         <div className="Judul">
           <h1 className="title">Our <span style={{ color: "#B8901A" }}>Portofolio</span> </h1>
         </div>
-        {/* <div class="servis-container">
+          <div class="servis-container">
           <div class="servis-item">
-            <h2 class="servis-title">Design</h2>
-            <h2 class="servis-title">Photography</h2>
-            <h2 class="servis-title">Videography</h2>
+            <h2 class="servis-title">Design .</h2>
+            <h2 class="servis-title">Photography .</h2>
+            <h2 class="servis-title">Videography .</h2>
           </div>
           <div class="servis-stats">
             <div class="stat-item">
@@ -687,15 +688,16 @@ function Home() {
               <span class="stat-number">14K +</span>
               <span class="stat-text">Completed Projects</span>
             </div>
-          </div> */}
+          </div>
+          </div>
         <div className="nvbar-container">
           <div className="nvbar">
-            <div className="nvbar-right">
-              <span>Design Marketing & Architect</span>
-              <span>Commercial</span>
-              <span>Ceremonial</span>
-              <span>Gen-Z</span>
-            </div>
+          <div className="nvbar-right">
+    <NavLink to="/portfolio" activeClassName="active-link"><span>Design Marketing & Architect</span></NavLink>
+    <NavLink to="/Portfolio2" activeClassName="active-link"><span>Commercial</span></NavLink>
+    <NavLink to="/Portfolio3" activeClassName="active-link"><span>Ceremonial</span></NavLink>
+    <NavLink to="/Portfolio4" activeClassName="active-link"><span>Gen-Z</span></NavLink>
+</div>
           </div>
         </div>
         <div className="photo-grid">

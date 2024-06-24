@@ -34,8 +34,8 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == "/" ? "#B8901A" : "#000",
-                  fontWeight: pathname == "/" ? "bold" : "",
+                  color: pathname === "/" ? "#B8901A" : "#000",
+                  fontWeight: pathname === "/" ? "bold" : "",
                 }}
               >
                 Home
@@ -45,16 +45,8 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: isServicesPage
-                    // pathname === "/Services" ||
-                    // (pathname === "/Services" || pathname === "/Services5")
-                      ? "#B8901A"
-                      : "#000",
-                  fontWeight: isServicesPage
-                    // pathname === "/Services" ||
-                    // (pathname === "/Services" || pathname === "/Services5")
-                      ? "bold"
-                      : "",
+                  color: isServicesPage ? "#B8901A" : "#000",
+                  fontWeight: isServicesPage ? "bold" : "",
                 }}
               >
                 Services
@@ -64,31 +56,30 @@ const Header = () => {
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == "/portfolio" ? "#B8901A" : "#000",
-                  fontWeight: pathname == "/portfolio" ? "bold" : "",
+                  color: pathname === "/portfolio" ? "#B8901A" : "#000",
+                  fontWeight: pathname === "/portfolio" ? "bold" : "",
                 }}
               >
                 Portfolio
               </Nav.Link>
               <Nav.Link
-                href="/Article"
+                href="/article" 
                 style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == "/Article" ? "#B8901A" : "#000",
-                  fontWeight: pathname == "/Article" ? "bold" : "",
+                  color: "black",
                 }}
               >
                 Article
               </Nav.Link>
               <Nav.Link
                 href="/Loyaltyreward"
-                style={{ 
+                style={{
                   marginRight: "2rem",
                   fontFamily: "Poppins, sans-serif",
-                  color: pathname == "/Loyaltyreward" ? "#B8901A" : "#000",
-                  fontWeight: pathname == "/Loyaltyreward" ? "bold" : "",
-                 }}
+                  color: pathname === "/Loyaltyreward" ? "#B8901A" : "#000",
+                  fontWeight: pathname === "/Loyaltyreward" ? "bold" : "",
+                }}
               >
                 Loyalty Rewards
               </Nav.Link>
@@ -101,10 +92,10 @@ const Header = () => {
               className="btn btn-primary btn-block p-2 mx-2 rounded-3"
               style={{
                 fontFamily: "Poppins, sans-serif",
-                background: pathname == "/signup" ? "#B8901A" : "#fff",
+                background: pathname === "/signup" ? "#B8901A" : "#fff",
                 border: "1px solid #B8901A",
-                color: pathname == "/signup" ? "#fff" : "#000",
-                fontWeight: pathname == "/signup" ? "bold" : "",
+                color: pathname === "/signup" ? "#fff" : "#000",
+                fontWeight: pathname === "/signup" ? "bold" : "",
               }}
             >
               Sign Up
@@ -115,11 +106,11 @@ const Header = () => {
               className="btn btn-primary btn-block p-2 mx-2 rounded-3"
               style={{
                 fontFamily: "Poppins, sans-serif",
-                background: pathname == "/login" ? "#B8901A" : "#fff",
+                background: pathname === "/login" ? "#B8901A" : "#fff",
                 border: "1px solid #B8901A",
                 width: "80px",
-                color: pathname == "/login" ? "#fff" : "#000",
-                fontWeight: pathname == "/login" ? "bold" : "",
+                color: pathname === "/login" ? "#fff" : "#000",
+                fontWeight: pathname === "/login" ? "bold" : "",
               }}
             >
               Login
