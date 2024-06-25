@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./services.css";
+import "./services345.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -77,7 +77,7 @@ function Services2() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/ordering1" className="Service2CustomButton Service2BookNow">
                 Book Now
               </NavLink>
             </div>
@@ -108,7 +108,7 @@ function Services2() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/ordering1" className="Service2CustomButton Service2BookNow">
                 Book Now
               </NavLink>
             </div>
@@ -140,7 +140,7 @@ function Services2() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service2CustomButton Service2BookNow">
+              <NavLink to="/ordering1" className="Service2CustomButton Service2BookNow">
                 Book Now
               </NavLink>
             </div>

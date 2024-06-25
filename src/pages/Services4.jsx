@@ -87,7 +87,7 @@ function Services4() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service4CustomButton Service4BookNow">
+              <NavLink to="/ordering1" className="Service4CustomButton Service4BookNow">
                 Book Now
               </NavLink>
             </div>
@@ -130,7 +130,7 @@ function Services4() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service4CustomButton Service4BookNow">
+              <NavLink to="/ordering1" className="Service4CustomButton Service4BookNow">
                 Book Now
               </NavLink>
             </div>
@@ -178,7 +178,7 @@ function Services4() {
               >
                 See Product
               </NavLink>
-              <NavLink to="/" className="Service4CustomButton Service4BookNow">
+              <NavLink to="/ordering1" className="Service4CustomButton Service4BookNow">
                 Book Now
               </NavLink>
             </div>

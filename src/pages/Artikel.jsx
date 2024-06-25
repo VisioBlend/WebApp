@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Desain from '../assets/image/Desainmarketing.jpg';
-import Foto from '../assets/image/Fotography.jpg'; 
-import Video from '../assets/image/Videography.jpg'; 
+import Foto from '../assets/image/Fotography.jpg';
+import Video from '../assets/image/Videography.jpg';
 import James from '../assets/Autor/James.jpg';
 import Robert from '../assets/Autor/Robert.jpg';
 import Brian from '../assets/Autor/Brian.jpg';
+import iconArticle from '../assets/Article.svg'
 import './artikel.css';
 
 const Article = () => {
@@ -60,7 +61,12 @@ const Article = () => {
 
   return (
     <div className="catalog-container">
-      <h1>Article & Learning</h1>
+      <div className="logo-container">
+          <img src={iconArticle} alt="Logo" className="logo" />
+        </div>
+      <div className="header">
+        <h1>Article & Learning</h1>
+      </div>
       <p className="description">
         VisioBlend, menawarkan fitur Article & Learning yang bermanfaat bagi masyarakat untuk dapat menjelajahi berbagai artikel dan materi pembelajaran tentang ilmu desain, photography dan videography.
       </p>

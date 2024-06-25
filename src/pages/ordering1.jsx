@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './ordering1.css';
-import { VscAccount } from "react-icons/vsc";
-import { FaMobileAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaBuilding } from "react-icons/fa";
+import { VscAccount } from 'react-icons/vsc';
+import { FaMobileAlt } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { FaBuilding } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 const Ordering1 = () => {
   const [formData, setFormData] = useState({
@@ -16,56 +17,29 @@ const Ordering1 = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-    if (name === "phoneNumber") {
-      const regex = /^\+62[0-9]*$/; 
-      if (value === '' || regex.test(value)) {
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      }
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
+  const handleSubmit = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/saveFormData', formData);
+      console.log(response.data); // Pesan dari backend (contoh: 'Data berhasil disimpan')
+      // Tambahkan logika redirect atau tindakan setelah sukses menyimpan data
+    } catch (error) {
+      console.error('Gagal menyimpan data:', error);
     }
-    const [progress, setProgress] = useState(1);
-
-    const handleNext = () => {
-      if (progress < 4) setProgress(progress + 1);
-    };
-  
-    const handleBack = () => {
-      if (progress > 1) setProgress(progress - 1);
-    };  
   };
 
   return (
     <div className="customer-container">
       <h1>Become a Customer</h1>
-      <p>Mari kita bekerja sama. Bertemu dengan tim kami untuk melayani kebutuhan digital</p>
-      <p>dan mengembangkan bisnis Anda.</p>
+      {/* Form components */}
       <div className="customer-app">
         <div className="customer-box-container">
           <div className="customer-box-services">
-            <div className="step-indicator">
-              {[1, 2, 3, 4].map((num, index) => (
-                <React.Fragment key={num}>
-                  <div className="step-circle">{num}</div>
-                  {index < 3 && <div className="step-connector"></div>}
-                </React.Fragment>
-              ))}
-            </div>
-            <div className="customer-detail">
-              <div className="customer-box-content">
-                <div className="customer-line"></div>
-                <h2>Contact details</h2>
-                <p>Please fill your information so we can get in touch with you.</p>
-              </div>
-            </div>
-
             <div className="customer-detail-container">
               <div className="customer-detail">
                 <h3 className="customer-h3">Name</h3>
@@ -126,13 +100,13 @@ const Ordering1 = () => {
               </div>
             </div>
           </div>
-          <NavLink to="/ordering2" className="next-button-clik">
+          <NavLink to="/ordering2" onClick={handleSubmit} className="next-button-clik">
             Next Step
           </NavLink>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Ordering1;

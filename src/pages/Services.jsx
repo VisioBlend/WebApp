@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./services.css";
+import "./services345.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -62,7 +62,7 @@ function Services() {
               <NavLink to="/portfolio" className="custom-button see-product">
                 See Product
               </NavLink>
-              <NavLink to="/" className="custom-button book-now">
+              <NavLink to="/ordering1" className="custom-button book-now">
                 Book Now
               </NavLink>
             </div>

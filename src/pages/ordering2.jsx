@@ -5,6 +5,7 @@ import { PiBuildingsFill } from "react-icons/pi";
 import { MdOutlineOndemandVideo } from "react-icons/md";
 import { BiParty } from "react-icons/bi";
 import { PiBicycle } from "react-icons/pi";
+import axios from 'axios';
 
 const Ordering2 = () => {
   const [selectedService, setSelectedService] = useState('');
@@ -12,6 +13,24 @@ const Ordering2 = () => {
   const handleServiceClick = (service) => {
     setSelectedService(service);
   };
+
+  const handleNextStepClick = () => {
+    // Prepare data to send to backend
+    const dataToSend = {
+      selectedService
+    };
+  
+    // Send data to backend using Axios
+    axios.post('http://localhost:5000/api/ordering2', dataToSend)
+      .then(response => {
+        console.log(response.data); // Log response from server
+        // Optionally, you can redirect to the next step here
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  };
+  
 
   return (
     <div className="ordering-container">
@@ -84,7 +103,7 @@ const Ordering2 = () => {
               </div>
             </div>
           </div>
-          <NavLink to="/ordering3" className="ordering-next-button">Next Step</NavLink>
+          <NavLink to="/ordering3" className="ordering-next-button" onClick={handleNextStepClick}>Next Step</NavLink>
           <NavLink to="/ordering1" className="ordering-back-button">Previous step</NavLink>
         </div>
       </div>

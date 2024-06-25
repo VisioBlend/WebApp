@@ -60,11 +60,10 @@ function Home() {
           style={{ width: "100%", height: "auto" }}
         />
         <div
-          className="teks-di-atas position-absolute top-50 start-50 translate-middle text-center text-white"
+          className="position-absolute top-50 start-50 translate-middle text-center text-white d-flex flex-column align-items-center justify-content-center"
           style={{
             fontFamily: "'Outfit', sans-serif",
             width: "100%",
-            textAlign: "center",
           }}
         >
           <h1 style={{ color: "#FFF", margin: "0"}}>
@@ -537,11 +536,11 @@ function Home() {
             style={{ height: "80px" }}
           />
           <h1
-            className="titleCustom fw-bold"
+            className="titleCustom fw-bold "
             style={{
               fontFamily: "'Outfit', sans-serif",
               fontSize: "50px",
-              margin: "20px 0",
+              margin: "40px 0 0 600px",
             }}
           >
             About <span style={{ color: "#B8901A" }}>Us</span>
@@ -605,7 +604,7 @@ function Home() {
             style={{
               fontFamily: "'Outfit', sans-serif",
               fontSize: "50px",
-              margin: "20px 0",
+              margin: "40px 0 0 490px",
             }}
           >
             Partners &{" "}
@@ -667,7 +666,19 @@ function Home() {
           <img src={iconPortfolio} alt="Logo" className="logo" />
         </div>
         <div className="Judul">
-          <h1 className="title">Our <span style={{ color: "#B8901A" }}>Portofolio</span> </h1>
+        <h1
+            className="partner-title fw-bold"
+            style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "50px",
+              margin: "0 40px",
+            }}
+          >
+            Our{" "}
+            <span className="partner-team-title" style={{ color: "#B8901A" }}>
+              Portofolio
+            </span>
+          </h1>
         </div>
           <div class="servis-container">
           <div class="servis-item">
